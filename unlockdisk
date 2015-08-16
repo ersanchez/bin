@@ -1,0 +1,98 @@
+#!/bin/bash
+
+# =================================================================
+
+# Copyright 2014 Eduardo Sanchez
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see .
+
+# ==================================================================
+
+# This script is used to unlock encrypted hdds in OS X 10.9 and 10.10
+
+# First open Disk Utility.app to see which hdd are available
+
+# 'locked' hdd will appear greyed-out
+
+open -g /Applications/Utilities/Disk\ Utility.app
+
+echo
+
+# collect the UUIDs of all of the attached hdd
+
+clear
+echo "These are the attached hard drives:"
+
+tempIFS=$IFS
+IFS=$'\n'
+diskutil cs list | grep -E "(Logical Volume) [A-F0-9]{8}-[A-F0-9]{4}-[A-F0-9]{4}-[A-F0-9]{4}-[A-F0-9]{12}" | cut -c 28-63 > hdd_UUIDs
+uuid=($(cat hdd_UUIDs))
+IFS=$tempIFS
+
+echo
+
+# collect the names of the Logical Volumes (disk names)
+
+tempIFS=$IFS
+IFS=$'\n'
+diskutil cs list | grep "LV Name" | cut -c 36-70 > hdd_LV_Names
+dname=($(cat hdd_LV_Names))
+IFS=$tempIFS
+
+# present the user with a listing of UUIDs and associated Logical Volume names
+
+echo "0." ${uuid[0]} ${dname[0]}
+echo "1." ${uuid[1]} ${dname[1]}
+echo "2." ${uuid[2]} ${dname[2]}
+echo "3." ${uuid[3]} ${dname[3]}
+echo "4." ${uuid[4]} ${dname[4]}
+echo "5." ${uuid[5]} ${dname[5]}
+echo "6." ${uuid[6]} ${dname[6]}
+echo "7." ${uuid[7]} ${dname[7]}
+echo
+
+# ask the user which disk to unlock
+
+echo Select the hdd to unlock
+echo
+echo
+
+# gather the user's choice
+
+read DISK
+
+# DO NOT store the password as a variable!
+# Keep passwords in a protected vault such as LastPass, Keypass, or 1Password
+
+# note: the version of 1Password may need to be updated or aliased
+
+open -g /Applications/1Password\ 5.app
+
+# unlock the disk selected by the user
+
+diskutil cs unlockVolume ${uuid[$DISK]} -stdinpass
+
+# User then pastes the password to complete the unlocking of the hdd
+
+# TO DO List
+#
+# Figure out how to process the UUID and LV Name without creating
+# an intermediate file
+#
+# Incorporate logic that will only present 'Locked' volumes
+#
+# this will do away with needing the Disk\ Utility.app open
+#
+# incorporate some crazy Keyboard Maestro kung-foo to auto run this
+# script upon attaching an encrypted hdd
