@@ -2,7 +2,7 @@
 
 Here are some notes from my reading.
 
-## Beginning Portable Shell Scripting
+## Shell Scripting
 
 2 requirements for matching:
 
