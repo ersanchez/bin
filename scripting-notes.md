@@ -19,6 +19,19 @@ Character class
 
 where _class_ is `punct`, `alpha`, `digit`, etc.
 
+match a specific character or character set
+
+Let's say you have a list of images:
+
+	img001.jpg
+	img002.jpg
+	img003.jpg
+	img010.jpg
+	img100.jpg
+
+Say you want to only find images numbered less than 10...
+
+	ls img00[0-9].jpg
 ## Variables
 
 names start with letters or underscores - can't start with numbers
