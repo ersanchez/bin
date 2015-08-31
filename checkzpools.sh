@@ -13,10 +13,13 @@ notifyemail=`cat /home/ers/doc/notification-email`
 notifysms=`cat /home/ers/doc/notification-sms`
 notifymsg=`cat /home/ers/doc/notification-sms-msg`
 
+# check status
+# send email if not healthy
 if [ "$poolstatus" != "all pools are healthy" ] ; then
 	zpool status | mailx -s "ZPOOL ERROR on $poolhost" $notifyemail
 fi
 
+# send text message to phone if not healthy
 if [ "$poolstatus" = "all pools are healthy" ] ; then
 	echo " " | mailx -s "ZPOOL ERROR on $poolhost" $notifysms
 fi
