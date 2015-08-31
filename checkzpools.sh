@@ -20,6 +20,6 @@ if [ "$poolstatus" != "all pools are healthy" ] ; then
 fi
 
 # send text message to phone if not healthy
-if [ "$poolstatus" = "all pools are healthy" ] ; then
+if [ "$poolstatus" != "all pools are healthy" ] ; then
 	echo " " | mailx -s "ZPOOL ERROR on $poolhost" $notifysms
 fi
