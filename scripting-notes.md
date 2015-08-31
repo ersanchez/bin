@@ -17,4 +17,4 @@ Character class
 
 	[[:_class_:]]
 
-where _class_ is punct, alpha, digit, etc.
+where _class_ is `punct`, `alpha`, `digit`, etc.
