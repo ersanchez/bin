@@ -1,4 +1,0 @@
-#!/bin/sh
-echo "What is your name?"
-read name
-echo I'm sorry, $name, but I can't let you do that.
