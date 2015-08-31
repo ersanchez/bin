@@ -18,3 +18,28 @@ Character class
 	[[:_class_:]]
 
 where _class_ is `punct`, `alpha`, `digit`, etc.
+
+## Variables
+
+names start with letters or underscores - can't start with numbers
+
+2 types
+
+* scalar
+* array - many values, indexed
+
+set a variable:
+
+	variablename=value
+	innings=9
+	
+	$ echo $innings
+	$ 9
+	
+unset a variable:
+
+	unset innings
+	
+	$ unset innings
+	$ echo $innings
+	$
