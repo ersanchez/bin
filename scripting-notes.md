@@ -56,3 +56,9 @@ unset a variable:
 	$ unset innings
 	$ echo $innings
 	$
+
+## math
+
+exponents: $(( exp ))
+	ex: echo $(( 5/2 ))
+	$ 2 # answer is 2.5, but this is integer math
