@@ -62,3 +62,9 @@ unset a variable:
 exponents: $(( exp ))
 	ex: echo $(( 5/2 ))
 	$ 2 # answer is 2.5, but this is integer math
+
+## quoting
+
+1. Single quotes - all meta characters inside the single quotes are treated literally and have no special meaning
+2. Double quotes - variable and command substitution workds but meta-characters are ignored (except for `\`` and `$`.
+3. Always single quote regular expressions so the shell does not do filename expansion
