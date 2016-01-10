@@ -1,12 +1,14 @@
 #!/bin/bash
+#
 # This shell script sets up Eduardo's working environment on a new 
 # Ubuntu machine.
-
+#
 # Install applications
 #sudo apt-get install -y abcde
 sudo apt-get install -y curl
 sudo apt-get install -y git
 sudo apt-get install -y pandoc
+sudo apt-get install -y synaptic
 sudo apt-get install -y tmux
 sudo apt-get install -y vim
 sudo apt-get install -y xclip
