@@ -16,7 +16,7 @@ if [ -d ./dotfiles/ ]; then
     mv dotfiles dotfiles.old
 fi
 # git install dotfiles
-git clone https://github.com/ersanchez/bin/dotfiles
+git clone https://github.com/ersanchez/dotfiles
 ln -sb dotfiles/.bash_profile .
 ln -sb dotfiles/.bashrc .
 ln -sb dotfiles/.bashrc_custom .
