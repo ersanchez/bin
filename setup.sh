@@ -11,6 +11,12 @@ sudo apt-get install -y tmux
 sudo apt-get install -y vim
 sudo apt-get install -y xclip
 
+# Install syncthing
+curl -s https://syncthing.net/release-key.txt | sudo apt-key add -
+echo "deb http://apt.syncthing.net/ syncthing release" | sudo tee /etc/apt/sources.list.d/syncthing.list
+sudo apt-get update
+sudo apt-get install syncthing
+
 # git pull dotfiles
 cd $HOME
 if [ -d ./dotfiles/ ]; then
