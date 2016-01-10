@@ -1,3 +1,0 @@
-#! /bin/sh
-# opens the Windows version of YNAB by typing 'ynab' in terminal
-$HOME/.wine/drive_c/Program\ Files\ \(x86\)/YNAB\ 4/YNAB\ 4.exe
