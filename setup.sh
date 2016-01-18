@@ -12,6 +12,12 @@ sudo apt-get install -y synaptic
 sudo apt-get install -y tmux
 sudo apt-get install -y vim
 sudo apt-get install -y xclip
+sudo apt-get install -y youtube-dl
+sudo apt-get install -y fonts-inconsoloata
+sudo apt-get install -y cmake
+sudo apt-get install -y gnutls-bin
+sudo apt-get install -y pv
+sudo apt-get install -y xclip
 
 # Install syncthing
 curl -s https://syncthing.net/release-key.txt | sudo apt-key add -
