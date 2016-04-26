@@ -18,6 +18,21 @@ sudo apt-get install -y cmake
 sudo apt-get install -y gnutls-bin
 sudo apt-get install -y pv
 sudo apt-get install -y xclip
+sudo apt-get install -y taskwarrior
+sudo apt-get install -y gnupg2
+sudo apt-get install -y gparted
+sudo apt-get install -y lyx
+sudo apt-get install -y markdown
+sudo apt-get install -y nfs-common
+sudo apt-get install -y okular
+sudo apt-get install -y par2
+sudo apt-get install -y unrar
+sudo apt-get install -y rsync
+sudo apt-get install -y shutter
+sudo apt-get install -y syncthing
+sudo apt-get install -y tor-browser
+sudo apt-get install -y ubuntu-mate-welcom
+sudo apt-get install -y vlc
 
 # Install syncthing
 curl -s https://syncthing.net/release-key.txt | sudo apt-key add -
