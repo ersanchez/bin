@@ -34,6 +34,7 @@ sudo apt-get install -y tor-browser
 sudo apt-get install -y ubuntu-mate-welcom
 sudo apt-get install -y vlc
 sudo apt-get install -y goldendict
+sudo apt-get install -y tree
 
 # Install syncthing
 curl -s https://syncthing.net/release-key.txt | sudo apt-key add -
