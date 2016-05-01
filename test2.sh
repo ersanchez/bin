@@ -1,1 +1,0 @@
-/home/ers/.st-bin/test2.sh
