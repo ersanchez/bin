@@ -1,0 +1,1 @@
+/home/ers/.st-bin/mountnfs.sh
