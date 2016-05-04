@@ -4,7 +4,7 @@
 # Ubuntu machine.
 #
 # Install applications
-#sudo apt-get install -y abcde
+sudo apt-get install -y abcde
 sudo apt-get install -y curl
 sudo apt-get install -y git
 sudo apt-get install -y pandoc
@@ -37,8 +37,8 @@ sudo apt-get install -y goldendict
 sudo apt-get install -y tree
 
 # Install syncthing
-curl -s https://syncthing.net/release-key.txt | sudo apt-key add -
-echo "deb http://apt.syncthing.net/ syncthing release" | sudo tee /etc/apt/sources.list.d/syncthing.list
+#curl -s https://syncthing.net/release-key.txt | sudo apt-key add -
+#echo "deb http://apt.syncthing.net/ syncthing release" | sudo tee /etc/apt/sources.list.d/syncthing.list
 sudo apt-get update
 sudo apt-get install syncthing
 
