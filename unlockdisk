@@ -19,7 +19,8 @@
 
 # ==================================================================
 
-# This script is used to unlock encrypted hdds in OS X 10.9 and 10.10
+# This script is used to unlock FileVault encrypted hard disk drives
+# in Mac OS X 10.9 and 10.10
 
 # First open Disk Utility.app to see which hdd are available
 
