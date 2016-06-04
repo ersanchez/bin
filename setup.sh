@@ -35,12 +35,7 @@ sudo apt-get install -y ubuntu-mate-welcom
 sudo apt-get install -y vlc
 sudo apt-get install -y goldendict
 sudo apt-get install -y tree
-
-# Install syncthing
-#curl -s https://syncthing.net/release-key.txt | sudo apt-key add -
-#echo "deb http://apt.syncthing.net/ syncthing release" | sudo tee /etc/apt/sources.list.d/syncthing.list
-sudo apt-get update
-sudo apt-get install syncthing
+sudo apt-get install -y syncthing
 
 # git pull dotfiles
 cd $HOME
@@ -49,8 +44,13 @@ if [ -d ./dotfiles/ ]; then
 fi
 # git install dotfiles
 git clone https://github.com/ersanchez/dotfiles.git
+ln -sb dotfiles/.abcde .
+ln -sb dotfiles/.bash_logout .
 ln -sb dotfiles/.bash_profile .
 ln -sb dotfiles/.bashrc .
 ln -sb dotfiles/.bashrc_custom .
+ln -sb dotfiles/.gitconfig .
+ln -sb dotfiles/.gitignore_global .
+ln -sb dotfiles/.profile .
 ln -sb dotfiles/.tmux.conf .
 ln -sb dotfiles/.vimrc .
