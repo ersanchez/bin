@@ -36,6 +36,7 @@ sudo apt-get install -y vlc
 sudo apt-get install -y goldendict
 sudo apt-get install -y tree
 sudo apt-get install -y syncthing
+sudo apt-get install -y ubuntu-mate-welcome
 
 # git pull dotfiles
 cd $HOME
