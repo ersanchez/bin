@@ -1,9 +1,12 @@
 #!/bin/bash
 
-#/usr/local/bin/task sync
+# Perform taskwarrior sync 
+/usr/bin/task sync
 
-#echo -e "$(date --iso-8601=seconds -u)\n" >> /home/ers/log/cron_tasksync
+# Check to see if sync was successful
+if [ $? == 0 ]
 
-# Perform taskwarrior sync and log only successful sync
-
-/usr/bin/task sync && echo -e "$(date --iso-8601=seconds -u)\n" >> /home/ers/log/cron_tasksync
+# Note success or fail to log
+then echo -e "$(date --iso-8601=seconds -u) - successful sync" >> /home/ers/log/cron_tasksync 
+else echo -e "$(date --iso-8601=seconds -u) - sync failed" >> /home/ers/log/cron_tasksync
+fi
