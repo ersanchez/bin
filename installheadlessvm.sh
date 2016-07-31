@@ -23,11 +23,15 @@ echo $active_eth
 echo "$vmname".vdi
 echo "Enter the size of the VM hdd in MB: "
 read vmsize
-echo vmsize
+echo $vmsize
+echo "Type in the full path to the ISO file to install: "
+read vmpathtoiso
+echo $vmpathtoiso
 
 # Creating the VM
 VBoxManage createvm --name $vmname --register
 VBoxManage modifyvm $vmname --memory 2048 --acpi on --boot1 dvd --nic1 bridged --bridgeadapter1 $active_eth
 VBoxManage createhd --filename $HOME/VirtualBox\ VMs/$vmname/"$vmname".vdi --size $vmsize
 VBoxManage storagectl $vmname --name "IDE Controller" --add ide
-VBoxManage storageattach $vmname --storagectl "IDE Controller" --port 0 --device 0 --type hdd --
+VBoxManage storageattach $vmname --storagectl "IDE Controller" --port 0 --device 0 --type hdd --medium $HOME/VirtualBox\ VMs/$vmname/"$vmname".vdi
+VBoxManage storageattach $vmname --storagectl "IDE Controller" --port 1 --device 0 --type dvddrive --medium $vmpathtoiso
