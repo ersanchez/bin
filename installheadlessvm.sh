@@ -24,6 +24,12 @@ echo "Enter the size of the VM hdd in MB: "
 read vmsize
 echo "Type in the full path to the ISO file to install: "
 read vmpathtoiso
+echo "Choose 32-bit or 64-bit Ubuntu OS [Type 32 or 64]: "
+read vmbit
+
+if $vmbit=32
+then vmbit=""
+echo $vmbit
 
 # Creating the VM
 VBoxManage createvm --name $vmname --ostype Ubuntu_64 --register
