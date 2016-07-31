@@ -18,18 +18,12 @@ echo "NOTE: VBox Extension Pack for this version must already be installed."
 # Installation information
 echo "Enter VM name: "
 read vmname
-echo $vmname
 echo "Enter the name of the active ethernet adapter: "
 read active_eth
-echo $active_eth
-echo "$vmname".vdi
 echo "Enter the size of the VM hdd in MB: "
 read vmsize
-echo $vmsize
 echo "Type in the full path to the ISO file to install: "
 read vmpathtoiso
-echo $vmpathtoiso
-
 
 # Creating the VM
 VBoxManage createvm --name $vmname --ostype Ubuntu_64 --register
