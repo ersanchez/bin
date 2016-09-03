@@ -37,19 +37,20 @@ sudo apt install -y xclip
 sudo apt install -y youtube-dl
 
 # git pull dotfiles
-cd $HOME
-if [ -d ./dotfiles/ ]; then
+cd $HOME/
+if [ -d $HOME/git-files/dotfiles/ ]; then
     mv dotfiles dotfiles.old
 fi
 # git install dotfiles
+cd $HOME/
 git clone https://github.com/ersanchez/dotfiles.git
-ln -sb git-files/dotfiles/.abcde .
-ln -sb git-files/dotfiles/.bash_logout .
-ln -sb git-files/dotfiles/.bash_profile .
-ln -sb git-files/dotfiles/.bashrc .
-ln -sb git-files/dotfiles/.bashrc_custom .
-ln -sb git-files/dotfiles/.gitconfig .
-ln -sb git-files/dotfiles/.gitignore_global .
-ln -sb git-files/dotfiles/.profile .
-ln -sb git-files/dotfiles/.tmux.conf .
-ln -sb git-files/dotfiles/.vimrc .
+ln -sb $HOME/git-files/dotfiles/.abcde $HOME/
+ln -sb $HOME/git-files/dotfiles/.bash_logout $HOME/
+ln -sb $HOME/git-files/dotfiles/.bash_profile $HOME/
+ln -sb $HOME/git-files/dotfiles/.bashrc $HOME/
+ln -sb $HOME/git-files/dotfiles/.bashrc_custo $HOME/
+ln -sb $HOME/git-files/dotfiles/.gitconfig $HOME/
+ln -sb $HOME/git-files/dotfiles/.gitignore_global $HOME/
+ln -sb $HOME/git-files/dotfiles/.profile $HOME/
+ln -sb $HOME/git-files/dotfiles/.tmux.conf $HOME/
+ln -sb $HOME/git-files/dotfiles/.vimrc $HOME/
