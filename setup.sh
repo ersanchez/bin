@@ -8,6 +8,8 @@ sudo apt install -y abcde
 sudo apt install -y cmake
 sudo apt install -y curl
 sudo apt install -y fonts-inconsoloata
+sudo apt install -y geany
+sudo apt install -y geany-plugin-lipsum
 sudo apt install -y git
 sudo apt install -y gnupg2
 sudo apt install -y gnutls-bin
