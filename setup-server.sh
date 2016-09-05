@@ -10,7 +10,6 @@ sudo apt install -y git
 sudo apt install -y gnupg2
 sudo apt install -y gnutls-bin
 sudo apt install -y markdown
-sudo apt install -y pandoc
 sudo apt install -y pv
 sudo apt install -y rsync
 sudo apt install -y syncthing
