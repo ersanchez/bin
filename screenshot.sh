@@ -7,6 +7,7 @@
 # To Do: set up if,then section that presents selection choice
 #   if more than 1 VM is running
 #   need to look deeper into 'VBoxManage list runningvms'
+#     see: "https://www.howtoforge.com/how-to-take-screenshots-of-virtualbox-vms"
 #
 
 vmname="u1604d_work_VPN"
