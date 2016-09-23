@@ -56,4 +56,5 @@ ln -sb $HOME/git-files/dotfiles/.gitconfig $HOME/
 ln -sb $HOME/git-files/dotfiles/.gitignore_global $HOME/
 ln -sb $HOME/git-files/dotfiles/.profile $HOME/
 ln -sb $HOME/git-files/dotfiles/.tmux.conf $HOME/
+ln -sb $HOME/git-files/dotfiles/.vim $HOME/
 ln -sb $HOME/git-files/dotfiles/.vimrc $HOME/
