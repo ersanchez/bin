@@ -3,6 +3,11 @@
 # This shell script sets up Eduardo's working environment on a new 
 # Ubuntu machine.
 #
+# run this by typing:
+#  wget https://raw.githubusercontent.com/ersanchez/bin/master/setup-desktop.sh
+#  chmod 755 setup-desktop.sh
+#  ./setup-desktop.sh
+#
 # Install applications
 sudo apt install -y abcde
 sudo apt install -y cmake
