@@ -4,9 +4,9 @@
 # Ubuntu machine.
 #
 # run this by typing:
-#  wget https://raw.githubusercontent.com/ersanchez/bin/master/setup-desktop.sh
-#  chmod 755 setup-desktop.sh
-#  ./setup-desktop.sh
+#  wget https://raw.githubusercontent.com/ersanchez/bin/master/install-desktop.sh
+#  chmod 755 install-desktop.sh
+#  ./install-desktop.sh
 #
 # Install applications
 sudo apt install -y abcde
