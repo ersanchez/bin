@@ -3,10 +3,6 @@
 # This shell script sets up Eduardo's working environment on a new 
 # Ubuntu machine.
 #
-sudo apt install -y git
-sudo apt install -y curl
-curl https://raw.githubusercontent.com/ersanchez/bin/master/setup-desktop.sh
-#
 # Install applications
 sudo apt install -y abcde
 sudo apt install -y cmake
