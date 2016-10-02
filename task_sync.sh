@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Perform taskwarrior sync 
-/usr/bin/task sync
+/usr/local/bin/task sync
 
 # Check to see if sync was successful
 if [ $? == 0 ]
