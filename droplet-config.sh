@@ -5,9 +5,7 @@
 #
 # !!! FOR TESTING PURPOSES ONLY !!!
 #
-# Variables
-#
-# username: name of the new user
+clear
 #
 # Create new user
 echo "Enter the name of the user to be added: "
@@ -37,5 +35,5 @@ fi
 mkdir /home/$username/.ssh
 chmod 700 /home/$username/.ssh
 touch /home/$username/.ssh/authorized_keys
-cat /home/root/authorized_keys > /home/$username/.ssh/authorized_keys
+cat /home/root/.ssh/authorized_keys > /home/$username/.ssh/authorized_keys
 chown -R $username:$username /home/$username/.ssh
