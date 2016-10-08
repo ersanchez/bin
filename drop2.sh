@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if "apt-get install -y git" ; then
+if `apt-get install -y git` ; then
     echo "Git installation successful"
 else
     echo "Git installation failed"
