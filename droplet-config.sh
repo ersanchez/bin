@@ -4,6 +4,17 @@
 # Written for Ubuntu GNU/Linux
 #
 # !!! FOR TESTING PURPOSES ONLY !!!
+# Run as root
+#
+# Install git
+apt-get install -y git
+#
+# Make a git directory
+mkdir /root/git-files
+#
+# clone git bin files
+cd /root/git-files
+git clone https://github.com/ersanchez/bin.git
 #
 clear
 #
