@@ -35,6 +35,6 @@ fi
 mkdir /home/$username/.ssh
 chmod 700 /home/$username/.ssh
 touch /home/$username/.ssh/authorized_keys
-cat /root/.ssh/authorized_keys > /home/$username/.ssh/authorized_keys
-$chown -R $username /home/$username
-$chgrp -R $username /home/$username
+cp /root/.ssh/authorized_keys /home/$username/.ssh/authorized_keys
+#chown -R $username /home/$username
+#$chgrp -R $username /home/$username
