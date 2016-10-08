@@ -14,6 +14,7 @@ sudo apt install -y cmake
 sudo apt install -y fonts-inconsolata
 sudo apt install -y geany
 sudo apt install -y geany-plugin-lipsum
+sudo apt install -y git
 sudo apt install -y gnupg2
 sudo apt install -y gnutls-bin
 sudo apt install -y goldendict
