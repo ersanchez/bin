@@ -1,22 +1,20 @@
 #!/bin/bash
 #
-# Quickly configure base droplet
+set -e  # exit if any command exits with a non-zero (fail) status
+#
+# Quickly configure base droplet for testing
 # Written for Ubuntu GNU/Linux
 #
 # !!! FOR TESTING PURPOSES ONLY !!!
 # Run as root
 #
-# Install git
 apt-get install -y git
-#
-# Make a git directory
 mkdir /root/git-files
-#
-# clone git bin files
 cd /root/git-files
 git clone https://github.com/ersanchez/bin.git
 #
-clear
+echo "Git files have been installed"
+echo
 #
 # Create new user
 echo "Enter the name of the user to be added: "
