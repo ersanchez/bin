@@ -33,8 +33,8 @@ fi
 #
 # DO NOT USE THIS ON A PRODUCTION MACHINE !!TESTING ONLY!!
 mkdir /home/$username/.ssh
-chmod 700 /home/$username/.ssh
 touch /home/$username/.ssh/authorized_keys
 cp /root/.ssh/authorized_keys /home/$username/.ssh/authorized_keys
-#chown -R $username /home/$username
-#$chgrp -R $username /home/$username
+chmod -R 700 /home/$username/.ssh
+chown -R $username /home/$username
+chgrp -R $username /home/$username
