@@ -9,7 +9,7 @@ set -e  # exit if any command exits with a non-zero (fail) status
 # Run as root
 #
 apt-get install -y git
-if [ $? != 0 ]; then
+if [ $? != "0" ]; then
     echo "Git install failed"
     exit 
 fi
