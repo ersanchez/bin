@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -e  # exit if any command exits with a non-zero (fail) status
 apt-get install -y git
 mkdir /root/git-files
 cd /root/git-files
