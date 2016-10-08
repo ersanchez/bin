@@ -1,11 +1,7 @@
 #!/bin/bash
 
-if "`apt-get install -y git`" ; then
-    echo "Git installation successful"
-else
-    echo "Git installation failed"
-fi
-
+apt-get install -y git
+wait
 mkdir /root/git-files
 cd /root/git-files
 git clone https://github.com/ersanchez/bin.git
