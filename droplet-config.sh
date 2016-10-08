@@ -34,6 +34,6 @@ fi
 # DO NOT USE THIS ON A PRODUCTION MACHINE !!TESTING ONLY!!
 mkdir /home/$username/.ssh
 chmod 700 /home/$username/.ssh
-#touch /home/$username/.ssh/authorized_keys
+touch /home/$username/.ssh/authorized_keys
 #cat /root/.ssh/authorized_keys > /home/$username/.ssh/authorized_keys
 #chown -R $username:$username /home/$username/.ssh
