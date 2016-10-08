@@ -37,5 +37,5 @@ fi
 mkdir /home/$username/.ssh
 chmod 700 /home/$username/.ssh
 touch /home/$username/.ssh/authorized_keys
-cat /home/root/authorized_keys > /home/$username/authorized_keys
+cat /home/root/authorized_keys > /home/$username/.ssh/authorized_keys
 chown -R $username:$username /home/$username/.ssh
