@@ -13,11 +13,9 @@ sudo apt install -y fonts-inconsolata
 sudo apt install -y gnutls-bin
 sudo apt install -y goldendict
 sudo apt install -y gparted
-sudo apt install -y keepass2
 sudo apt install -y markdown
 sudo apt install -y nfs-common
 sudo apt install -y okular
-sudo apt install -y peek
 sudo apt install -y pv
 sudo apt install -y rsync
 sudo apt install -y shutter
@@ -26,7 +24,6 @@ sudo apt install -y taskwarrior
 sudo apt install -y tmux
 sudo apt install -y tree
 sudo apt install -y ubuntu-mate-welcome
-sudo apt install -y unrar
 sudo apt install -y vim
 sudo apt install -y xclip
 
