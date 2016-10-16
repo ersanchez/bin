@@ -29,13 +29,16 @@ sudo apt install -y ubuntu-mate-welcome
 sudo apt install -y vim
 sudo apt install -y xclip
 
+# make a directory for git files
+mkdir $HOME/git-files
+
 # git pull dotfiles
 cd $HOME/
 if [ -d $HOME/git-files/dotfiles/ ]; then
     mv dotfiles dotfiles.old
 fi
 # git install dotfiles
-cd $HOME/
+cd $HOME/git-files/
 git clone https://github.com/ersanchez/dotfiles.git
 ln -sb $HOME/git-files/dotfiles/.abcde $HOME/
 ln -sb $HOME/git-files/dotfiles/.bash_logout $HOME/
