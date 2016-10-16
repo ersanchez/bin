@@ -9,6 +9,7 @@
 #
 # Install applications
 sudo apt install -y cmake
+sudo apt install -y ecryptfs-utils
 sudo apt install -y fonts-inconsolata
 sudo apt install -y gnutls-bin
 sudo apt install -y goldendict
