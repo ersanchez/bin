@@ -3,7 +3,7 @@
 # Script to install minimum programs for desktop 
 #
 # run this by typing:
-#  wget https://raw.githubusercontent.com/ersanchez/bin/master/install-desktop.sh
+#  wget https://raw.githubusercontent.com/ersanchez/bin/master/install-desktop-minimum.sh
 #  chmod 755 install-desktop.sh
 #  ./install-desktop.sh
 #
