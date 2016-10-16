@@ -11,6 +11,7 @@
 # Install applications
 sudo apt install -y abcde
 sudo apt install -y cmake
+sudo apt install -y ecryptfs-utils
 sudo apt install -y fonts-inconsolata 
 sudo apt install -y geany
 sudo apt install -y geany-plugin-lipsum
