@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Script to install minimum programs for desktop 
+# Script to install minimum programs for desktop virtual machine
 #
 # run this by typing:
 #  wget https://raw.githubusercontent.com/ersanchez/bin/master/install-desktop-minimum.sh
