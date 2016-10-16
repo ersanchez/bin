@@ -30,10 +30,11 @@ sudo apt install -y vim
 sudo apt install -y xclip
 
 # make a directory for git files
-mkdir $HOME/git-files
+mkdir $HOME/git-files/
+echo "git-files directory created!"
 
 # git pull dotfiles
-cd $HOME/
+
 if [ -d $HOME/git-files/dotfiles/ ]; then
     mv dotfiles dotfiles.old
 fi
