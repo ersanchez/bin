@@ -10,7 +10,7 @@
 #
 # Install applications
 sudo apt install -y abcde
-sudo apt install -y byzandz
+sudo apt install -y byzanz
 sudo apt install -y cmake
 sudo apt install -y ecryptfs-utils
 sudo apt install -y fonts-inconsolata 
