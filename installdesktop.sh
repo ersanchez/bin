@@ -66,3 +66,7 @@ ln -sb $HOME/git-files/dotfiles/.profile $HOME/
 ln -sb $HOME/git-files/dotfiles/.tmux.conf $HOME/
 ln -sb $HOME/git-files/dotfiles/.vim $HOME/
 ln -sb $HOME/git-files/dotfiles/.vimrc $HOME/
+
+# Not included
+# http://kryogenix.org/code/pick/
+# http://www.omgubuntu.co.uk/2016/08/peek-desktop-gif-screen-recorder-linux
