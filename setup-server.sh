@@ -6,6 +6,7 @@
 # Install applications
 sudo apt install -y cmake
 sudo apt install -y curl
+sudo apt install -y ecryptfs-utils
 sudo apt install -y git
 sudo apt install -y gnupg2
 sudo apt install -y gnutls-bin
