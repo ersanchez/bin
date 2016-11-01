@@ -79,7 +79,7 @@ read DISK
 
 # note: the version of 1Password may need to be updated or aliased
 
-open -g /Applications/1Password\ 5.app
+open -g /Applications/1Password*.app
 
 # unlock the disk selected by the user
 
