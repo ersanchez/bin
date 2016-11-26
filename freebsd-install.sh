@@ -23,5 +23,5 @@ sudo cp /usr/local/etc/ssmtp/ssmtp.conf.sample /usr/local/etc/ssmtp/ssmtp.conf
 # disable sendmail
 
 cd /etc
-sudo echo 'sendmail_enable="NO"' >> rc.conf
-sudo echo 'sendmail_submit_enable="NO"' >> rc.conf
+echo 'sendmail_enable="NO"' | sudo tee -a /etc/rc.conf
+echo 'sendmail_submit_enable="NO"' | sudo tee -a /etc/rc.conf
