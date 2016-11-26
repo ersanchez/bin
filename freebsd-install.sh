@@ -26,4 +26,4 @@ cd /etc
 echo 'sendmail_enable="NO"' | sudo tee -a /etc/rc.conf
 echo 'sendmail_submit_enable="NO"' | sudo tee -a /etc/rc.conf
 echo 'sendmail_outbound_enable="NO"' | sudo tee -a /etc/rc.conf
-echo 'sendmail_msp_queue_enable="NO"' | sudo tee -a /etc/rc.confq
+echo 'sendmail_msp_queue_enable="NO"' | sudo tee -a /etc/rc.conf
