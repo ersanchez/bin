@@ -3,6 +3,7 @@
 # Script to automatically configure a headless FreeBSD server
 
 # Install pkg
+sudo pkg install -y gnupg
 sudo pkg install -y python3
 sudo pkg install -y rsync
 sudo pkg install -y ruby
