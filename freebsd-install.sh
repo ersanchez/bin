@@ -23,9 +23,8 @@ sudo cp /usr/local/etc/ssmtp/ssmtp.conf.sample /usr/local/etc/ssmtp/ssmtp.conf
 # disable sendmail
 
 cd /etc
-if grep -v 'sendmail_enable="NO"' /etc/rc.conf; then
-  echo 'sendmail_enable="NO"' | sudo tee -a /etc/rc.conf
-fi
+echo 'sendmail_enable="NO"' | sudo tee -a /etc/rc.conf
 echo 'sendmail_submit_enable="NO"' | sudo tee -a /etc/rc.conf
 echo 'sendmail_outbound_enable="NO"' | sudo tee -a /etc/rc.conf
 echo 'sendmail_msp_queue_enable="NO"' | sudo tee -a /etc/rc.conf
+# To do: rewrite script to detect if these lines are present, if not, add them
