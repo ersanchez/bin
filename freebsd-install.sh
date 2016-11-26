@@ -14,3 +14,8 @@ sudo pkg install -y vim-lite
 sudo pkg install -y wget
 sudo pkg install -y xclip
 sudo pkg install -y zfstools
+
+# configure send-only email for reporting
+
+sudo cp /usr/local/etc/ssmtp/revaliases.sample /usr/local/etc/ssmtp/revaliases
+sudo cp /usr/local/etc/ssmtp/ssmtp.conf.sample /usr/local/etc/ssmtp/ssmtp.conf
