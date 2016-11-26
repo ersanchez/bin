@@ -19,3 +19,8 @@ sudo pkg install -y zfstools
 
 sudo cp /usr/local/etc/ssmtp/revaliases.sample /usr/local/etc/ssmtp/revaliases
 sudo cp /usr/local/etc/ssmtp/ssmtp.conf.sample /usr/local/etc/ssmtp/ssmtp.conf
+
+# disable sendmail
+
+sudo echo 'sendmail_enable="NO"' >> /etc/rc.conf
+sudo echo 'sendmail_submit_enable="NO"' >> /etc/rc.conf
