@@ -45,7 +45,8 @@ sudo apt install -y virtualbox
 sudo apt install -y vlc
 sudo apt install -y wine
 sudo apt install -y xclip
-sudo apt install -y youtube-dl
+#sudo apt install -y youtube-dl
+sudo apt install -y zfs
 
 # git pull dotfiles
 cd $HOME/
