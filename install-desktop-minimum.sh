@@ -24,6 +24,7 @@ sudo apt install -y shutter
 sudo apt install -y synaptic
 sudo apt install -y taskwarrior
 sudo apt install -y tmux
+sudo apt install -y traceroute
 sudo apt install -y tree
 sudo apt install -y ubuntu-mate-welcome
 sudo apt install -y vim
