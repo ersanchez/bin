@@ -42,6 +42,7 @@ sudo apt install -y tree
 sudo apt install -y ubuntu-mate-welcome
 sudo apt install -y unrar
 sudo apt install -y vim
+sudo apt install -y vimdiff
 sudo apt install -y virtualbox
 sudo apt install -y vlc
 sudo apt install -y wine
