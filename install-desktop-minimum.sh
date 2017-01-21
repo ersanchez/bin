@@ -28,6 +28,7 @@ sudo apt install -y traceroute
 sudo apt install -y tree
 sudo apt install -y ubuntu-mate-welcome
 sudo apt install -y vim
+sudo apt install -y whois
 sudo apt install -y xclip
 
 # make a directory for git files
