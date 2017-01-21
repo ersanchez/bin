@@ -45,6 +45,7 @@ sudo apt install -y vim
 sudo apt install -y vimdiff
 sudo apt install -y virtualbox
 sudo apt install -y vlc
+sudo apt install -y whois
 sudo apt install -y wine
 sudo apt install -y xclip
 #sudo apt install -y youtube-dl
