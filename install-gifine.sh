@@ -33,18 +33,18 @@ echo "*****************************" && \
 cd /opt && \
 sudo git clone https://github.com/naelstrof/slop.git && \
 echo "*****************************" && \
-echo "git installed" && \
+echo "slop cloned" && \
 echo "*****************************" && \
-cd slop && \
-sudo cmake -DCMAKE_OPENGL_SUPPORT=true ./ && \
-sudo make && sudo make install && \
-echo "*****************************" && \
-echo "slop installed" && \
-echo "*****************************" && \
+#cd slop && \
+#sudo cmake -DCMAKE_OPENGL_SUPPORT=true ./ && \
+#sudo make && sudo make install && \
+#echo "*****************************" && \
+#echo "slop installed" && \
+#echo "*****************************" && \
 # Install LGI:
-sudo luarocks install.lgi && \
-echo "*****************************" && \
-echo "LGI installed" && \
-echo "*****************************" && \
+#sudo luarocks install.lgi && \
+#echo "*****************************" && \
+#echo "LGI installed" && \
+#echo "*****************************" && \
 # Install `gifine`.
-sudo luarocks install --server=http://luarocks.org/dev gifine
+#sudo luarocks install --server=http://luarocks.org/dev gifine
