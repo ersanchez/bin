@@ -43,7 +43,7 @@ echo "slop installed" && \
 echo "*****************************"
 #### fix end of previous line
 # Install LGI:
-#sudo luarocks install.lgi && \
+#sudo luarocks install lgi && \
 #echo "*****************************" && \
 #echo "LGI installed" && \
 #echo "*****************************" && \
