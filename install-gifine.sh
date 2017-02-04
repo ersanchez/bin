@@ -25,19 +25,13 @@ libglu1-mesa-dev \
 libglew-dev \
 libxrandr-dev \
 libgirepository1.0-dev \
-
 # Install `slop` using the instructions in the `slop` README.md file.
 # https://github.com/naelstrof/slop
-
-sudo git clone https://github.com/naelstrof/slop.git
-cd slop
-sudo cmake -DCMAKE_OPENGL_SUPPORT=true ./
-sudo make && sudo make install
-
+sudo git clone https://github.com/naelstrof/slop.git && \
+cd slop && \
+sudo cmake -DCMAKE_OPENGL_SUPPORT=true ./ && \
+sudo make && sudo make install && \
 # Install LGI:
-
-sudo luarocks install.lgi
-
+sudo luarocks install.lgi && \
 # Install `gifine`.
-
 sudo luarocks install --server=http://luarocks.org/dev gifine
