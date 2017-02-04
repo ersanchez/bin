@@ -11,7 +11,6 @@ ffmpeg \
 graphicsmagick \
 gifsicle \
 luarocks \
-git \
 libxext-dev \
 libimlib2-dev \
 mesa-utils \
