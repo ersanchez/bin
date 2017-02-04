@@ -6,7 +6,7 @@
 
 # First install the dependencies for `gifine` and for dependencies of `gifine`'s dependencies:
 
-sudo apt install \
+sudo apt install -y \
 ffmpeg \
 graphicsmagick \
 gifsicle \
@@ -34,8 +34,5 @@ sudo cmake -DCMAKE_OPENGL_SUPPORT=true ./ && \
 sudo make && sudo make install && \
 # Install LGI:
 sudo luarocks install lgi && \
-echo "*****************************" && \
-echo "LGI installed" && \
-echo "*****************************" && \
 # Install `gifine`.
 sudo luarocks install --server=http://luarocks.org/dev gifine
