@@ -38,6 +38,9 @@ echo "*****************************" && \
 cd slop && \
 sudo cmake -DCMAKE_OPENGL_SUPPORT=true ./ && \
 sudo make && sudo make install && \
+echo "*****************************" && \
+echo "slop installed" && \
+echo "*****************************" && \
 # Install LGI:
 sudo luarocks install.lgi && \
 # Install `gifine`.
