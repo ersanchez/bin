@@ -43,5 +43,8 @@ echo "slop installed" && \
 echo "*****************************" && \
 # Install LGI:
 sudo luarocks install.lgi && \
+echo "*****************************" && \
+echo "LGI installed" && \
+echo "*****************************" && \
 # Install `gifine`.
 sudo luarocks install --server=http://luarocks.org/dev gifine
