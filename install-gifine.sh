@@ -27,6 +27,7 @@ libxrandr-dev \
 libgirepository1.0-dev \
 # Install `slop` using the instructions in the `slop` README.md file.
 # https://github.com/naelstrof/slop
+cd /opt
 sudo git clone https://github.com/naelstrof/slop.git && \
 cd slop && \
 sudo cmake -DCMAKE_OPENGL_SUPPORT=true ./ && \
