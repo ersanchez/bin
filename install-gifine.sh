@@ -13,7 +13,7 @@ gifsicle \
 luarocks \
 git \
 libxext-dev \
-libimlib2 \
+libimlib2-dev \
 mesa-utils \
 libxrender-dev \
 glew-utils \
@@ -34,14 +34,14 @@ cd /opt && \
 sudo git clone https://github.com/naelstrof/slop.git && \
 echo "*****************************" && \
 echo "slop cloned" && \
+echo "*****************************" && \
+cd /opt/slop && \
+sudo cmake -DCMAKE_OPENGL_SUPPORT=true ./ && \
+sudo make && sudo make install && \
+echo "*****************************" && \
+echo "slop installed" && \
 echo "*****************************"
-####### add an && \\to the end of the previous line
-#cd slop && \
-#sudo cmake -DCMAKE_OPENGL_SUPPORT=true ./ && \
-#sudo make && sudo make install && \
-#echo "*****************************" && \
-#echo "slop installed" && \
-#echo "*****************************" && \
+#### fix end of previous line
 # Install LGI:
 #sudo luarocks install.lgi && \
 #echo "*****************************" && \
