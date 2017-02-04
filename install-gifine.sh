@@ -34,7 +34,8 @@ cd /opt && \
 sudo git clone https://github.com/naelstrof/slop.git && \
 echo "*****************************" && \
 echo "slop cloned" && \
-echo "*****************************" && \
+echo "*****************************"
+####### add an && \\to the end of the previous line
 #cd slop && \
 #sudo cmake -DCMAKE_OPENGL_SUPPORT=true ./ && \
 #sudo make && sudo make install && \
