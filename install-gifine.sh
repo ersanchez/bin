@@ -24,11 +24,17 @@ gengetopt \
 libglu1-mesa-dev \
 libglew-dev \
 libxrandr-dev \
-libgirepository1.0-dev \
+libgirepository1.0-dev && \
+echo "*****************************" && \
+echo "dependencies installed" && \
+echo "*****************************" && \
 # Install `slop` using the instructions in the `slop` README.md file.
 # https://github.com/naelstrof/slop
-cd /opt
+cd /opt && \
 sudo git clone https://github.com/naelstrof/slop.git && \
+echo "*****************************" && \
+echo "git installed" && \
+echo "*****************************" && \
 cd slop && \
 sudo cmake -DCMAKE_OPENGL_SUPPORT=true ./ && \
 sudo make && sudo make install && \
