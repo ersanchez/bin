@@ -63,7 +63,7 @@ link()
   echo "dotfiles have been linked" >> $HOME/install.log
 }
 
-applications
-directories
-clonerepos
+applications &&\
+directories &&\
+clonerepos &&\
 link
