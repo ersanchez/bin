@@ -4,23 +4,25 @@
 cd $HOME/git-files/
 
 removeold() {
-  rm -rf .bash_logout
-  rm -rf .bashrc
-  rm -rf .profile
+  cd $HOME
+  rm -rf .bash_logout*
+  rm -rf .bashrc*
+  rm -rf .profile*
 }
 
 linknew() {
-  ln -sb $HOME/git-files/dotfiles/.abcde $HOME/
-  ln -sb $HOME/git-files/dotfiles/.bash_logout $HOME/
-  ln -sb $HOME/git-files/dotfiles/.bash_profile $HOME/
-  ln -sb $HOME/git-files/dotfiles/.bashrc $HOME/
-  ln -sb $HOME/git-files/dotfiles/.bashrc_custo $HOME/
-  ln -sb $HOME/git-files/dotfiles/.gitconfig $HOME/
-  ln -sb $HOME/git-files/dotfiles/.gitignore_global $HOME/
-  ln -sb $HOME/git-files/dotfiles/.profile $HOME/
-  ln -sb $HOME/git-files/dotfiles/.tmux.conf $HOME/
-  ln -sb $HOME/git-files/dotfiles/.vim $HOME/
-  ln -sb $HOME/git-files/dotfiles/.vimrc $HOME/
+  cd $HOME
+  ln -sb $HOME/git-files/dotfiles/.abcde .abcde
+  ln -sb $HOME/git-files/dotfiles/.bash_logout .bash_logout
+  ln -sb $HOME/git-files/dotfiles/.bash_profile .bash_profile
+  ln -sb $HOME/git-files/dotfiles/.bashrc .bashrc
+  ln -sb $HOME/git-files/dotfiles/.bashrc_custo .bashrc_custo
+  ln -sb $HOME/git-files/dotfiles/.gitconfig .gitconfig
+  ln -sb $HOME/git-files/dotfiles/.gitignore_global .gitignore_global
+  ln -sb $HOME/git-files/dotfiles/.profile .profile
+  ln -sb $HOME/git-files/dotfiles/.tmux.conf .tmux.conf
+  ln -sb $HOME/git-files/dotfiles/.vim .vim
+  ln -sb $HOME/git-files/dotfiles/.vimrc .vimrc
 }
 
 removeold &&\
