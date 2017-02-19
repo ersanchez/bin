@@ -19,8 +19,8 @@
 # Run as normal user NOT root
 #
 # get all of the scripts:
-sudo apt install -y git &\
-mkdir $HOME/git-files &\
-cd $HOME/git-files &\
+sudo apt install -y git &&\
+mkdir $HOME/git-files &&\
+cd $HOME/git-files &&\
 git clone https://github.com/ersanchez/bin.git
 git clone https://github.com/ersanchez/dotfiles.git
