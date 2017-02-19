@@ -1,28 +1,27 @@
 #!/bin/bash
 #
-# Script to install minimum programs for desktop virtual machine
+# script to config a brand new Ubuntu installation
+#
+# What it does:
+# * installs apps (minimal listing)
+# * creates directories
+# * clones github repos
 #
 # run this by typing:
 #  wget https://raw.githubusercontent.com/ersanchez/bin/master/install-desktop-minimum.sh
-#  chmod 755 install-desktop.sh
-#  ./install-desktop.sh
+#  chmod 755 install-desktop-minimum.sh
+#  ./install-desktop-minimum.sh
 #
 # Install applications
-sudo apt install -y cmake
 sudo apt install -y ecryptfs-utils
 sudo apt install -y fonts-inconsolata
 sudo apt install -y git
-sudo apt install -y gnutls-bin
-sudo apt install -y goldendict
 sudo apt install -y gparted
 sudo apt install -y markdown
 sudo apt install -y nfs-common
-sudo apt install -y okular
 sudo apt install -y pv
 sudo apt install -y rsync
-sudo apt install -y shutter
 sudo apt install -y synaptic
-sudo apt install -y taskwarrior
 sudo apt install -y tmux
 sudo apt install -y traceroute
 sudo apt install -y tree
@@ -31,15 +30,19 @@ sudo apt install -y vim
 sudo apt install -y whois
 sudo apt install -y xclip
 
-# make a directory for git files
+echo "apps installed!" >> $HOME/install.log
+
+# make directories
 mkdir $HOME/git-files/
-echo "git-files directory created!"
+
+echo "git-files directory created!" >> $HOME/install.log
 
 # git pull dotfiles
 
 if [ -d $HOME/git-files/dotfiles/ ]; then
     mv dotfiles dotfiles.old
 fi
+
 # git install dotfiles
 cd $HOME/git-files/
 git clone https://github.com/ersanchez/dotfiles.git
