@@ -44,9 +44,8 @@ clonerepos()
   if [ -d $HOME/git-files/dotfiles/ ]; then
     mv dotfiles dotfiles.old
   fi
-  cd $HOME/git-files/bin
+  cd $HOME/git-files/
   git clone https://github.com/ersanchez/bin.git
-  cd $HOME/git-files/dotfiles
   git clone https://github.com/ersanchez/dotfiles.git
 
   echo "repositories have been cloned" >> $HOME/install.log
