@@ -1,0 +1,26 @@
+#!/bin/bash
+#
+# This script calls many other scripts to configure a fresh
+# install of Ubuntu
+# 
+# Warning: ensure Software Update is done with its 
+# 'first boot' run before starting this script
+#
+# Download this script directly from GitHub:
+# $ wget https://goo.gl/vRKD2a
+#
+# Overview of events:
+# 
+# * create directory for git
+# * install git
+# * clone git repos
+# * link dotfiles to git repo
+#
+# Run as normal user NOT root
+#
+# get all of the scripts:
+sudo apt install -y git &\
+mkdir $HOME/git-files &\
+cd $HOME/git-files &\
+git clone https://github.com/ersanchez/bin.git
+git clone https://github.com/ersanchez/dotfiles.git
