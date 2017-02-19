@@ -6,6 +6,7 @@
 # * installs apps (minimal listing)
 # * creates directories
 # * clones github repos
+# * link dotfiles to github dotfiles
 #
 # run this by typing:
 #  wget https://raw.githubusercontent.com/ersanchez/bin/master/install-desktop-minimum.sh
@@ -14,19 +15,13 @@
 #
 # Install applications
 sudo apt install -y ecryptfs-utils
-sudo apt install -y fonts-inconsolata
 sudo apt install -y git
 sudo apt install -y gparted
-sudo apt install -y markdown
 sudo apt install -y nfs-common
 sudo apt install -y pv
-sudo apt install -y rsync
-sudo apt install -y synaptic
 sudo apt install -y tmux
 sudo apt install -y traceroute
 sudo apt install -y tree
-sudo apt install -y ubuntu-mate-welcome
-sudo apt install -y vim
 sudo apt install -y whois
 sudo apt install -y xclip
 
@@ -43,7 +38,7 @@ if [ -d $HOME/git-files/dotfiles/ ]; then
     mv dotfiles dotfiles.old
 fi
 
-# git install dotfiles
+# link dotfiles to git repo
 cd $HOME/git-files/
 git clone https://github.com/ersanchez/dotfiles.git
 ln -sb $HOME/git-files/dotfiles/.abcde $HOME/
