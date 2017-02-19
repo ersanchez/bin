@@ -5,6 +5,8 @@
 # Warning: this script will fail if auto-updates (on by default)
 # are enabled.
 #
+# Run this as the your user - NOT root
+#
 # Kill auto updates:
 # $ sudo systemctl disable apt-daily.service # disable running at boot
 # $ sudo systemctl disable apt-daily.timer # disable running whenever the timer hits
@@ -16,11 +18,11 @@
 # make it executable
 # run it!
 #
-killdpkg()
-{
-  sudo pkill dpkg
-  echo "killed dpkg" >> $HOME/install.log
-}
+#killdpkg()
+#{
+#  sudo pkill dpkg
+#  echo "killed dpkg" >> $HOME/install.log
+#}
 applications()
 {
   # This installs the applications
@@ -76,7 +78,7 @@ link()
   echo "dotfiles have been linked" >> $HOME/install.log
 }
 
-killdpkg &&\
+#killdpkg &&\
 applications &&\
 directories &&\
 clonerepos &&\
