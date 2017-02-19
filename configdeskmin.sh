@@ -10,6 +10,7 @@
 killdpkg()
 {
   sudo pkill dpkg
+  echo "killed dpkg" >> $HOME/install.log
 }
 applications()
 {
