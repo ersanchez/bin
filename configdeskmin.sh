@@ -3,7 +3,7 @@
 # This script kicks off a minimal config of new Ubuntu installation
 #
 # Run it by typing this:
-# $ wget http://goo.gl/VBMFtV
+# $ wget goo.gl/vRKD2
 # make it executable
 # run it!
 #
