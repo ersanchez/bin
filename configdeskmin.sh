@@ -1,6 +1,15 @@
 #!/bin/bash
 #
 # This script kicks off a minimal config of new Ubuntu installation
+# 
+# Warning: this script will fail if auto-updates (on by default)
+# are enabled.
+#
+# Kill auto updates:
+# $ sudo systemctl disable apt-daily.service # disable running at boot
+# $ sudo systemctl disable apt-daily.timer # disable running whenever the timer hits
+#
+# reboot
 #
 # Run it by typing this:
 # $ wget https://goo.gl/vRKD2a
