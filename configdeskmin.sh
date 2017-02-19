@@ -3,10 +3,9 @@
 # This script kicks off a minimal config of new Ubuntu installation
 #
 # Run it by typing this:
-# $ wget goo.gl/vRKD2
+# $ wget goo.gl/vRKD2a
 # make it executable
 # run it!
-#
 #
 applications()
 {
