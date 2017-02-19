@@ -18,9 +18,15 @@
 #
 # Run as normal user NOT root
 #
+# ensure `apt` is NOT running:
+#
+# $ ps aux | grep apt | grep root  # note process ID
+# $ sudo kill XXXX
+#
 # get all of the scripts:
 sudo apt install -y git &&\
 mkdir $HOME/git-files &&\
 cd $HOME/git-files &&\
-git clone https://github.com/ersanchez/bin.git
-git clone https://github.com/ersanchez/dotfiles.git
+git clone https://github.com/ersanchez/bin.git &&\
+git clone https://github.com/ersanchez/dotfiles.git &&\
+$HOME/git-files/bin/cfgdotfiles
