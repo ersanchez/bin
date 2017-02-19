@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+# link dotfiles to git repo
+cd $HOME/git-files/
+ln -sb $HOME/git-files/dotfiles/.abcde $HOME/
+rm -rf .bash_logout
+ln -sb $HOME/git-files/dotfiles/.bash_logout $HOME/
+ln -sb $HOME/git-files/dotfiles/.bash_profile $HOME/
+rm -rf .bashrc
+ln -sb $HOME/git-files/dotfiles/.bashrc $HOME/
+ln -sb $HOME/git-files/dotfiles/.bashrc_custo $HOME/
+ln -sb $HOME/git-files/dotfiles/.gitconfig $HOME/
+ln -sb $HOME/git-files/dotfiles/.gitignore_global $HOME/
+rm -rf .profile
+ln -sb $HOME/git-files/dotfiles/.profile $HOME/
+ln -sb $HOME/git-files/dotfiles/.tmux.conf $HOME/
+ln -sb $HOME/git-files/dotfiles/.vim $HOME/
+ln -sb $HOME/git-files/dotfiles/.vimrc $HOME/
