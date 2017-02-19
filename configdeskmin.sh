@@ -3,10 +3,14 @@
 # This script kicks off a minimal config of new Ubuntu installation
 #
 # Run it by typing this:
-# $ wget goo.gl/vRKD2a
+# $ wget https://goo.gl/vRKD2a
 # make it executable
 # run it!
 #
+killdpkg()
+{
+  sudo pkill dpkg
+}
 applications()
 {
   # This installs the applications
@@ -63,6 +67,7 @@ link()
   echo "dotfiles have been linked" >> $HOME/install.log
 }
 
+killdpkg &&\
 applications &&\
 directories &&\
 clonerepos &&\
