@@ -46,6 +46,7 @@ sudo apt install -y nfs-common
 sudo apt install -y okular
 sudo apt install -y pandoc
 sudo apt install -y par2
+sudo apt install -y pdfshuffler
 sudo apt install -y peek
 sudo apt install -y pv
 sudo apt install -y python3
