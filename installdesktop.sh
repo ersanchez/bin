@@ -14,7 +14,9 @@ sudo apt install -y anoise
 sudo apt install -y audacity
 sudo apt install -y audio-recorder
 sudo apt install -y bleachbit
-sudo apt insatll -y brasero
+sudo apt install -y brasero
+sudo apt install -y brscan4 # brother printer
+sudo apt install -y brscan-skey #Brother printer
 sudo apt install -y byzanz
 sudo apt install -y calibre
 sudo apt install -y chromium-browser
