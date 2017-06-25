@@ -75,10 +75,10 @@ sudo apt install -y vlc
 sudo apt install -y vokoscreen
 sudo apt install -y whois
 sudo apt install -y wifi-radar
-sudo apt install -y wine
+sudo apt install -y wine-stable
 sudo apt install -y xclip
 #sudo apt install -y youtube-dl
-sudo apt install -y zfs
+sudo apt install -y zfsutils-linux
 
 # git pull dotfiles
 cd $HOME/
