@@ -4,9 +4,9 @@
 # Ubuntu machine.
 #
 # run this by typing:
-#  wget https://raw.githubusercontent.com/ersanchez/bin/master/install-desktop.sh
-#  chmod 755 install-desktop.sh
-#  ./install-desktop.sh
+#  wget https://raw.githubusercontent.com/ersanchez/bin/master/installdesktop.sh
+#  chmod 755 installdesktop.sh
+#  ./installdesktop.sh
 #
 # Install applications
 # To do: cluster these install lines into one command; make subsequent 
