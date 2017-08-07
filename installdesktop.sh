@@ -21,6 +21,7 @@ sudo apt install -y byzanz
 sudo apt install -y calibre
 sudo apt install -y chromium-browser
 sudo apt install -y cmake
+sudo apt install -y dateutils
 sudo apt install -y dropbox
 sudo apt install -y ecryptfs-utils
 sudo apt install -y fonts-inconsolata 
