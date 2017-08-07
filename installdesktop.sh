@@ -103,6 +103,7 @@ sudo apt install -y zfsutils-linux
 
 # git pull dotfiles
 cd $HOME/
+# prevent blowing away existing dotfiles
 if [ -d $HOME/git-files/dotfiles/ ]; then
     mv dotfiles dotfiles.old
 fi
@@ -124,3 +125,4 @@ ln -sb $HOME/git-files/dotfiles/.vimrc $HOME/
 # Not included
 # http://kryogenix.org/code/pick/
 # http://www.omgubuntu.co.uk/2016/08/peek-desktop-gif-screen-recorder-linux
+# snap packages: openshot, etc
