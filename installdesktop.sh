@@ -82,6 +82,7 @@ sudo apt install -y synaptic
 sudo apt install -y syncthing
 sudo apt install -y taskwarrior
 #sudo apt install -y telegram
+sudo apt install -y tlp
 sudo apt install -y tmux
 sudo apt install -y torsocks
 sudo apt install -y traceroute
