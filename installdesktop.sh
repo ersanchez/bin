@@ -111,7 +111,7 @@ fi
 # git install dotfiles
 cd $HOME/
 git clone https://github.com/ersanchez/dotfiles.git
-ln -sb $HOME/git-files/dotfiles/.abcde $HOME/
+ln -sb $HOME/git-files/dotfiles/.abcde.conf $HOME/
 ln -sb $HOME/git-files/dotfiles/.bash_logout $HOME/
 ln -sb $HOME/git-files/dotfiles/.bash_profile $HOME/
 ln -sb $HOME/git-files/dotfiles/.bashrc $HOME/
