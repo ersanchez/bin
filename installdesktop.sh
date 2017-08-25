@@ -30,6 +30,7 @@ sudo apt install -y dia
 sudo apt install -y dropbox
 sudo apt install -y ecryptfs-utils
 sudo apt install -y etcher-electron
+sudo apt install -y flac
 sudo apt install -y fonts-inconsolata 
 sudo apt install -y gddrescue
 sudo apt install -y geany
