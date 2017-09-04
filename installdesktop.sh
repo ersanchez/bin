@@ -45,6 +45,7 @@ sudo apt install -y gnutls-bin
 sudo apt install -y goldendict
 sudo apt install -y google-chrome-stable
 sudo apt install -y gparted
+sudo apt install -y gufw
 sudo apt install -y handbrake
 sudo apt install -y inkscape
 sudo apt install -y kazam
