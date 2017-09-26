@@ -47,6 +47,7 @@ sudo apt install -y google-chrome-stable
 sudo apt install -y gparted
 sudo apt install -y gufw
 sudo apt install -y handbrake
+sudo apt install -y htop
 sudo apt install -y inkscape
 sudo apt install -y kazam
 sudo apt install -y kdenlive
