@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# This shell script sets up Eduardo's working environment on a new 
+# This shell script sets up Eduardo's working environment on a new
 # Ubuntu machine.
 #
 # run this by typing:
@@ -9,7 +9,7 @@
 #  ./installdesktop.sh
 #
 # Install applications
-# To do: cluster these install lines into one command; make subsequent 
+# To do: cluster these install lines into one command; make subsequent
 #   command run only after pkg installation is done
 sudo apt install -y abcde
 sudo apt install -y anoise
@@ -31,7 +31,7 @@ sudo apt install -y dropbox
 sudo apt install -y ecryptfs-utils
 sudo apt install -y etcher-electron
 sudo apt install -y flac
-sudo apt install -y fonts-inconsolata 
+sudo apt install -y fonts-inconsolata
 sudo apt install -y gddrescue
 sudo apt install -y geany
 sudo apt install -y geany-plugin-lipsum
@@ -67,6 +67,7 @@ sudo apt install -y peek
 sudo apt install -y powerline
 sudo apt install -y psensor
 sudo apt install -y pv
+sudo apt install -y python
 sudo apt install -y python3
 sudo apt install -y remmina
 sudo apt install -y retext
