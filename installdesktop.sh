@@ -56,6 +56,7 @@ sudo apt install -y keepass2
 sudo apt install -y lyx
 sudo apt install -y markdown
 sudo apt install -y mate-desktop-environment
+sudo apt install -y md5deep
 sudo apt install -y mono-complete
 sudo apt install -y mplayer
 sudo apt install -y nfs-common
