@@ -132,4 +132,4 @@ ln -sb $HOME/git-files/dotfiles/.vimrc $HOME/
 # Not included
 # http://kryogenix.org/code/pick/
 # http://www.omgubuntu.co.uk/2016/08/peek-desktop-gif-screen-recorder-linux
-# snap packages: openshot, etc
+# snap packages: openshot, standard notes, etc
