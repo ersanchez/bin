@@ -112,7 +112,7 @@ sudo snap install bitwarden
 #sudo snap install vlc
 
 # create git repo
-mkdir -p $HOME/git-files/dotfiles
+mkdir -p $HOME/git-files/
 
 # git pull dotfiles
 cd $HOME/
@@ -121,8 +121,10 @@ if [ -d $HOME/git-files/dotfiles/ ]; then
     mv dotfiles dotfiles.old
 fi
 # git install dotfiles
-cd $HOME/
+cd $HOME/git-files
+
 git clone https://github.com/ersanchez/dotfiles.git
+
 ln -sb $HOME/git-files/dotfiles/.abcde.conf $HOME/
 ln -sb $HOME/git-files/dotfiles/.bash_logout $HOME/
 ln -sb $HOME/git-files/dotfiles/.bash_profile $HOME/
