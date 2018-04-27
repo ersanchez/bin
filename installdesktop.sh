@@ -146,7 +146,7 @@ ln -sb $HOME/git-files/dotfiles/.vimrc $HOME/
 # Not included
 # http://kryogenix.org/code/pick/
 # http://www.omgubuntu.co.uk/2016/08/peek-desktop-gif-screen-recorder-linux
-# snap packages: openshot, standard notes, etc
+# app images: openshot, standard notes, etc
 
 if [ -d $HOME/bin ]; then
     mv $HOME/bin $HOME/bin-old
@@ -167,11 +167,12 @@ if [ -d $HOME/Videos ]; then
     mv $HOME/Videos $HOME/videos-old
     fi
 
-ln -sb $HOME/.st-bin $HOME/bin
-ln -sb $HOME/.st-docs $HOME/Documents
-ln -sb $HOME/.st-mus $HOME/Music
-ln -sb $HOME/.st-pic $HOME/Pictures
-ln -sb $HOME/.st-pub $HOME/Public
-ln -sb $HOME/.st-vid $HOME/Videos
-
 mkdir .st-bin .st-docs .st-mus .st-pic .st-pub .st-vid
+
+ln -sb $HOME/.st-bin $HOME/bin/
+ln -sb $HOME/.st-docs $HOME/Documents/
+ln -sb $HOME/.st-mus $HOME/Music/
+ln -sb $HOME/.st-pic $HOME/Pictures/
+ln -sb $HOME/.st-pub $HOME/Public/
+ln -sb $HOME/.st-vid $HOME/Videos/
+
