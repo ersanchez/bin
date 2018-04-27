@@ -149,7 +149,7 @@ ln -sb $HOME/git-files/dotfiles/.vimrc $HOME/
 # snap packages: openshot, standard notes, etc
 
 mkdir .st-bin .st-docs .st-mus .st-pic .st-pub .st-vid
-if [ -d $HOME/bin]; then
+if [ -d $HOME/bin ]; then
     mv $HOME/bin $HOME/bin-old
     fi
 if [ -d $HOME/Documents ]; then
@@ -161,10 +161,10 @@ if [ -d $HOME/Music ] ; then
 if [ -d $HOME/Pictures ] ; then
     mv $HOME/Pictures $HOME/pictures-old
     fi
-if [ -d $HOME/Public]; then
+if [ -d $HOME/Public ]; then
     mv $HOME/Public $HOME/public-old
     fi
-if [ -d $HOME/Videos]; then
+if [ -d $HOME/Videos ]; then
     mv $HOME/Videos $HOME/videos-old
     fi
 
