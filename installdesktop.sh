@@ -151,15 +151,21 @@ ln -sb $HOME/git-files/dotfiles/.vimrc $HOME/
 mkdir .st-bin .st-docs .st-mus .st-pic .st-pub .st-vid
 if [ -d $HOME/bin]; then
     mv $HOME/bin $HOME/bin-old
+    fi
 if [ -d $HOME/Documents ]; then
     mv $HOME/Documents $HOME/docs-old
+    fi
 if [ -d $HOME/Music ] ; then
     mv $HOME/Music $HOME/music-old
+    fi
 if [ -d $HOME/Pictures ] ; then
     mv $HOME/Pictures $HOME/pictures-old
+    fi
 if [ -d $HOME/Public]; then
     mv $HOME/Public $HOME/public-old
+    fi
 if [ -d $HOME/Videos]; then
     mv $HOME/Videos $HOME/videos-old
+    fi
 
     mv dotfiles dotfiles.old
