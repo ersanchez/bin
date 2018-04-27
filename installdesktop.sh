@@ -148,7 +148,7 @@ ln -sb $HOME/git-files/dotfiles/.vimrc $HOME/
 # http://www.omgubuntu.co.uk/2016/08/peek-desktop-gif-screen-recorder-linux
 # snap packages: openshot, standard notes, etc
 
-mkdir .st-bin .st-docs .st-mus .st-pic .st-pub .st-vid
+#mkdir .st-bin .st-docs .st-mus .st-pic .st-pub .st-vid
 if [ -d $HOME/bin ]; then
     mv $HOME/bin $HOME/bin-old
     fi
