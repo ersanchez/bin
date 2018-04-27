@@ -99,7 +99,6 @@ sudo apt install -y vim
 sudo apt install -y vimdiff
 sudo apt install -y virtualbox
 sudo apt install -y virt-manager
-sudo apt install -y vlc
 sudo apt install -y vokoscreen
 sudo apt install -y whois
 sudo apt install -y wifi-radar
@@ -107,6 +106,13 @@ sudo apt install -y wine64
 sudo apt install -y xclip
 #sudo apt install -y youtube-dl
 sudo apt install -y zfsutils-linux
+
+sudo snap install bitwarden
+sudo snap install libreoffice
+sudo snap install vlc
+
+# create git repo
+mkdir $HOME/git-files
 
 # git pull dotfiles
 cd $HOME/
