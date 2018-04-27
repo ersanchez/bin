@@ -25,7 +25,6 @@ sudo apt install -y git
 #sudo apt install -y brscan-skey #Brother printer
 #sudo apt install -y byzanz
 #sudo apt install -y calibre
-#sudo apt install -y chromium-browser
 #sudo apt install -y cmake
 #sudo apt install -y corebird
 #sudo apt install -y dateutils
@@ -81,7 +80,6 @@ sudo apt install -y git
 #sudo apt install -y scribus
 #sudo apt install -y shutter
 #sudo apt install -y simplescreenrecorder
-#sudo apt install -y spotify-client
 #sudo apt install -y sqlite
 #sudo apt install -y sqlitebrowser
 #sudo apt install -y sqliteman
@@ -106,12 +104,18 @@ sudo apt install -y git
 #sudo apt install -y wifi-radar
 #sudo apt install -y wine64
 #sudo apt install -y xclip
-#sudo apt install -y youtube-dl
 #sudo apt install -y zfsutils-linux
 
 #sudo snap install bitwarden
+#sudo snap install chromium
+#sudo snap install keepassxc
 #sudo snap install libreoffice
+#sudo snap install spotify
+#sudo snap install syncthing
+#sudo snap install vidcutter
 #sudo snap install vlc
+#sudo snap install youtube-dl-snap
+
 
 # create git repo
 mkdir -p $HOME/git-files/
@@ -143,3 +147,19 @@ ln -sb $HOME/git-files/dotfiles/.vimrc $HOME/
 # http://kryogenix.org/code/pick/
 # http://www.omgubuntu.co.uk/2016/08/peek-desktop-gif-screen-recorder-linux
 # snap packages: openshot, standard notes, etc
+
+mkdir .st-bin .st-docs .st-mus .st-pic .st-pub .st-vid
+if [ -d $HOME/bin]; then
+    mv $HOME/bin $HOME/bin-old
+if [ -d $HOME/Documents ]; then
+    mv $HOME/Documents $HOME/docs-old
+if [ -d $HOME/Music ] ; then
+    mv $HOME/Music $HOME/music-old
+if [ -d $HOME/Pictures ] ; then
+    mv $HOME/Pictures $HOME/pictures-old
+if [ -d $HOME/Public]; then
+    mv $HOME/Public $HOME/public-old
+if [ -d $HOME/Videos]; then
+    mv $HOME/Videos $HOME/videos-old
+
+    mv dotfiles dotfiles.old
