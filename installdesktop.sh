@@ -11,7 +11,10 @@
 # Install applications
 # To do: cluster these install lines into one command; make subsequent
 #   command run only after pkg installation is done
-sudo apt install -y abcde
+
+sudo apt install -y git
+
+#sudo apt install -y abcde
 #sudo apt install -y anoise
 #sudo apt install -y audacity
 #sudo apt install -y audio-recorder
@@ -36,7 +39,6 @@ sudo apt install -y abcde
 #sudo apt install -y geany
 #sudo apt install -y geany-plugin-lipsum
 #sudo apt install -y gimp
-#sudo apt install -y git
 #sudo apt install -y gnome-clocks
 #sudo apt install -y gnome-mpv
 #sudo apt install -y gnucash
@@ -107,7 +109,7 @@ sudo apt install -y abcde
 #sudo apt install -y youtube-dl
 #sudo apt install -y zfsutils-linux
 
-sudo snap install bitwarden
+#sudo snap install bitwarden
 #sudo snap install libreoffice
 #sudo snap install vlc
 
