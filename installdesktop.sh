@@ -167,13 +167,14 @@ if [ -d $HOME/Videos ]; then
     mv $HOME/Videos $HOME/videos-old
     fi
 
+cd $HOME
 mkdir .st-bin .st-docs .st-mus .st-pic .st-pub .st-vid
 echo "Directories created"
 
-#ln -sb $HOME/.st-bin $HOME/bin
-#ln -sb $HOME/.st-docs $HOME/Documents
-#ln -sb $HOME/.st-mus $HOME/Music
-#ln -sb $HOME/.st-pic $HOME/Pictures
-#ln -sb $HOME/.st-pub $HOME/Public
+ln -sb $HOME/.st-bin $HOME/bin
+ln -sb $HOME/.st-docs $HOME/Documents
+ln -sb $HOME/.st-mus $HOME/Music
+ln -sb $HOME/.st-pic $HOME/Pictures
+ln -sb $HOME/.st-pub $HOME/Public
 ln -sb $HOME/.st-vid $HOME/Videos
 echo "links created"
