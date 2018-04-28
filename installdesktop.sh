@@ -27,6 +27,7 @@ sudo apt install -y byzanz
 sudo apt install -y calibre
 sudo apt install -y cmake
 sudo apt install -y corebird
+sudo apt install -y curl
 sudo apt install -y dateutils
 sudo apt install -y dia
 sudo apt install -y dropbox
