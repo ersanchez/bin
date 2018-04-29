@@ -62,6 +62,7 @@ sudo apt install -y md5deep
 sudo apt install -y mono-complete
 sudo apt install -y mplayer
 sudo apt install -y nfs-common
+sudo apt install -y nmap
 sudo apt install -y okular
 sudo apt install -y openvpn
 sudo apt install -y pandoc
