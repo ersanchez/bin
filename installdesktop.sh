@@ -15,6 +15,7 @@ sudo apt update
 
 sudo apt install -y git
 sudo apt install -y abcde
+sudo apt install -y anki
 sudo apt install -y anoise
 sudo apt install -y audacity
 sudo apt install -y audio-recorder
