@@ -56,12 +56,14 @@ sudo apt install -y inkscape
 sudo apt install -y kazam
 sudo apt install -y kdenlive
 sudo apt install -y keepass2
+sudo apt install -y lynx
 sudo apt install -y lyx
 sudo apt install -y markdown
 sudo apt install -y mate-desktop-environment
 sudo apt install -y md5deep
 sudo apt install -y mono-complete
 sudo apt install -y mplayer
+sudo apt install -y newsboat
 sudo apt install -y nfs-common
 sudo apt install -y nmap
 sudo apt install -y okular
