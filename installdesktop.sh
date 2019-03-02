@@ -56,7 +56,8 @@ sudo apt install -y htop
 sudo apt install -y inkscape
 sudo apt install -y kazam
 sudo apt install -y kdenlive
-sudo apt install -y keepass2
+sudo apt install -y keepassxc
+sudo apt install -y libreoffice
 sudo apt install -y lynx
 sudo apt install -y lyx
 sudo apt install -y markdown
@@ -97,6 +98,7 @@ sudo apt install -y tlp
 sudo apt install -y tmux
 sudo apt install -y torsocks
 sudo apt install -y traceroute
+sudo apt install -y transmission
 sudo apt install -y tree
 sudo apt install -y ubuntu-mate-welcome
 sudo apt install -y unrar
@@ -104,6 +106,7 @@ sudo apt install -y vim
 sudo apt install -y vimdiff
 sudo apt install -y virtualbox
 sudo apt install -y virt-manager
+sudo apt install -y vlc
 sudo apt install -y vokoscreen
 sudo apt install -y whois
 sudo apt install -y wifi-radar
@@ -113,12 +116,9 @@ sudo apt install -y zfsutils-linux
 
 sudo snap install bitwarden
 sudo snap install chromium
-sudo snap install keepassxc
-sudo snap install libreoffice
 sudo snap install spotify
 sudo snap install syncthing
 sudo snap install vidcutter
-sudo snap install vlc
 sudo snap install youtube-dl-snap
 
 
