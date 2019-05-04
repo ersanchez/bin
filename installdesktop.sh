@@ -11,10 +11,12 @@
 # Install applications
 # To do: cluster these install lines into one command; make subsequent
 #   command run only after pkg installation is done
+
 sudo apt update
 
 sudo apt install -y git
 sudo apt install -y abcde
+sudo apt install -y acoustid
 sudo apt install -y anki
 sudo apt install -y anoise
 sudo apt install -y audacity
@@ -22,16 +24,19 @@ sudo apt install -y audio-recorder
 sudo apt install -y autokey-gtk
 sudo apt install -y bleachbit
 sudo apt install -y brasero
-sudo apt install -y brscan4 # brother printer
-sudo apt install -y brscan-skey #Brother printer
+# sudo apt install -y brscan4 # brother printer
+# sudo apt install -y brscan-skey #Brother printer
 sudo apt install -y byzanz
 sudo apt install -y calibre
+sudo apt install -y cdparanoia
+sudo apt install -y chirp
+sudo apt install -y clementine
 sudo apt install -y cmake
 sudo apt install -y corebird
 sudo apt install -y curl
 sudo apt install -y dateutils
 sudo apt install -y dia
-sudo apt install -y dropbox
+sudo apt install -y diceware
 sudo apt install -y ecryptfs-utils
 sudo apt install -y etcher-electron
 sudo apt install -y flac
@@ -60,11 +65,14 @@ sudo apt install -y keepassxc
 sudo apt install -y libreoffice
 sudo apt install -y lynx
 sudo apt install -y lyx
+sudo apt install -y makemkv-oss
 sudo apt install -y markdown
 sudo apt install -y mate-desktop-environment
 sudo apt install -y md5deep
+sudo apt install -y meld
 sudo apt install -y mono-complete
 sudo apt install -y mplayer
+sudo apt install -y mpv
 sudo apt install -y nemo
 sudo apt install -y newsboat
 sudo apt install -y nfs-common
@@ -75,6 +83,7 @@ sudo apt install -y pandoc
 sudo apt install -y par2
 sudo apt install -y pdfshuffler
 sudo apt install -y peek
+sudo apt install -y picard
 sudo apt install -y powerline
 sudo apt install -y psensor
 sudo apt install -y pv
@@ -87,6 +96,7 @@ sudo apt install -y rsync
 sudo apt install -y sabnzbdplus
 sudo apt install -y scribus
 sudo apt install -y shutter
+sudo apt install -y signal-desktop
 sudo apt install -y simplescreenrecorder
 sudo apt install -y sqlite
 sudo apt install -y sqlitebrowser
@@ -118,7 +128,6 @@ sudo apt install -y zfsutils-linux
 sudo snap install bitwarden
 sudo snap install chromium
 sudo snap install spotify
-sudo snap install syncthing
 sudo snap install vidcutter
 sudo snap install youtube-dl-snap
 
@@ -148,10 +157,6 @@ ln -sb $HOME/git-files/dotfiles/.profile $HOME/
 ln -sb $HOME/git-files/dotfiles/.tmux.conf $HOME/
 ln -sb $HOME/git-files/dotfiles/.vim $HOME/
 ln -sb $HOME/git-files/dotfiles/.vimrc $HOME/
-
-curl -s https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add -
-echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
-sudo apt update && sudo apt install signal-desktop
 
 # Not included
 # http://kryogenix.org/code/pick/
