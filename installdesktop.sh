@@ -98,6 +98,7 @@ sudo apt install -y scribus
 sudo apt install -y shutter
 sudo apt install -y signal-desktop
 sudo apt install -y simplescreenrecorder
+sudo apt install -y snapd
 sudo apt install -y sqlite
 sudo apt install -y sqlitebrowser
 sudo apt install -y sqliteman
