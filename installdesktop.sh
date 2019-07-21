@@ -46,6 +46,7 @@ sudo apt install -y geany
 sudo apt install -y geany-plugin-lipsum
 sudo apt install -y gimp
 sudo apt install -y gnome-clocks
+sudo apt install -y gnome-disk-utility
 sudo apt install -y gnome-mpv
 sudo apt install -y gnucash
 sudo apt install -y gnupg2
