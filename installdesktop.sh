@@ -115,6 +115,7 @@ sudo apt install -y traceroute
 sudo apt install -y transmission
 sudo apt install -y tree
 sudo apt install -y ubuntu-mate-welcome
+sudo apt install -y uptimed
 sudo apt install -y unrar
 sudo apt install -y vim
 sudo apt install -y vimdiff
