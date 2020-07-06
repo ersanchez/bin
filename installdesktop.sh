@@ -30,6 +30,7 @@ sudo apt install -y byzanz
 sudo apt install -y calibre
 sudo apt install -y cdparanoia
 sudo apt install -y chirp
+sudo apt install -y chromium-browser
 sudo apt install -y clementine
 sudo apt install -y cmake
 sudo apt install -y corebird
@@ -52,7 +53,7 @@ sudo apt install -y gnucash
 sudo apt install -y gnupg2
 sudo apt install -y gnutls-bin
 sudo apt install -y goldendict
-sudo apt install -y google-chrome-stable
+#sudo apt install -y google-chrome-stable
 sudo apt install -y gparted
 sudo apt install -y gthumb
 sudo apt install -y guvcview
@@ -130,9 +131,8 @@ sudo apt install -y xclip
 sudo apt install -y zfsutils-linux
 
 sudo snap install bitwarden
-sudo snap install chromium
 sudo snap install spotify
-sudo snap install vidcutter
+#sudo snap install vidcutter
 sudo snap install youtube-dl-snap
 
 
