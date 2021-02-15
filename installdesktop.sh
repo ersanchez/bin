@@ -29,17 +29,17 @@ sudo apt install -y brasero
 sudo apt install -y byzanz
 sudo apt install -y calibre
 sudo apt install -y cdparanoia
-sudo apt install -y chirp
+# sudo apt install -y chirp
 sudo apt install -y chromium-browser
 sudo apt install -y clementine
 sudo apt install -y cmake
-sudo apt install -y corebird
+# sudo apt install -y corebird
 sudo apt install -y curl
 sudo apt install -y dateutils
 sudo apt install -y dia
 sudo apt install -y diceware
 sudo apt install -y ecryptfs-utils
-sudo apt install -y etcher-electron
+# sudo apt install -y etcher-electron
 sudo apt install -y flac
 sudo apt install -y fonts-inconsolata
 sudo apt install -y gddrescue
