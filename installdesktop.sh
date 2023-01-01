@@ -16,30 +16,23 @@ sudo apt update
 
 sudo apt install -y git
 sudo apt install -y abcde
-sudo apt install -y acoustid
 sudo apt install -y anki
-sudo apt install -y anoise
 sudo apt install -y audacity
-sudo apt install -y audio-recorder
 sudo apt install -y autokey-gtk
 sudo apt install -y bleachbit
 sudo apt install -y brasero
-# sudo apt install -y brscan4 # brother printer
-# sudo apt install -y brscan-skey #Brother printer
 sudo apt install -y byzanz
 sudo apt install -y calibre
 sudo apt install -y cdparanoia
-# sudo apt install -y chirp
+sudo apt install -y chirp
 sudo apt install -y chromium-browser
 sudo apt install -y clementine
 sudo apt install -y cmake
-# sudo apt install -y corebird
 sudo apt install -y curl
 sudo apt install -y dateutils
 sudo apt install -y dia
 sudo apt install -y diceware
 sudo apt install -y ecryptfs-utils
-# sudo apt install -y etcher-electron
 sudo apt install -y flac
 sudo apt install -y fonts-inconsolata
 sudo apt install -y gddrescue
@@ -53,7 +46,6 @@ sudo apt install -y gnucash
 sudo apt install -y gnupg2
 sudo apt install -y gnutls-bin
 sudo apt install -y goldendict
-#sudo apt install -y google-chrome-stable
 sudo apt install -y gparted
 sudo apt install -y gthumb
 sudo apt install -y guvcview
@@ -80,11 +72,11 @@ sudo apt install -y newsboat
 sudo apt install -y nfs-common
 sudo apt install -y nmap
 sudo apt install -y okular
+
 sudo apt install -y openvpn
 sudo apt install -y pandoc
 sudo apt install -y par2
 sudo apt install -y pdfarranger
-sudo apt install -y pdfshuffler
 sudo apt install -y peek
 sudo apt install -y picard
 sudo apt install -y powerline
@@ -102,9 +94,6 @@ sudo apt install -y shutter
 sudo apt install -y signal-desktop
 sudo apt install -y simplescreenrecorder
 sudo apt install -y snapd
-sudo apt install -y sqlite
-sudo apt install -y sqlitebrowser
-sudo apt install -y sqliteman
 sudo apt install -y synapse
 sudo apt install -y synaptic
 sudo apt install -y syncthing
@@ -119,7 +108,6 @@ sudo apt install -y ubuntu-mate-welcome
 sudo apt install -y uptimed
 sudo apt install -y unrar
 sudo apt install -y vim
-sudo apt install -y vimdiff
 sudo apt install -y virtualbox
 sudo apt install -y virt-manager
 sudo apt install -y vlc
@@ -128,7 +116,6 @@ sudo apt install -y whois
 sudo apt install -y wifi-radar
 sudo apt install -y wine64
 sudo apt install -y xclip
-sudo apt install -y zfsutils-linux
 
 sudo snap install bitwarden
 sudo snap install spotify
@@ -194,12 +181,12 @@ mkdir $HOME/.st-pub
 mkdir $HOME/.st-vid
 echo "Directories created"
 
-ln -sb $HOME/.st-bin $HOME/bin
-ln -sb $HOME/.st-doc $HOME/Documents
-ln -sb $HOME/.st-mus $HOME/Music
-ln -sb $HOME/.st-pic $HOME/Pictures
-ln -sb $HOME/.st-pub $HOME/Public
-ln -sb $HOME/.st-vid $HOME/Videos
+ln -sb $HOME/sync/.st-bin $HOME/bin
+ln -sb $HOME/sync/.st-doc $HOME/Documents
+ln -sb $HOME/sync/.st-mus $HOME/Music
+ln -sb $HOME/sync/.st-pic $HOME/Pictures
+ln -sb $HOME/sync/.st-pub $HOME/Public
+ln -sb $HOME/sync/.st-vid $HOME/Videos
 echo "links created"
 
 rm $HOME/installdesktop.sh
