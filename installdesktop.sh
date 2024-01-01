@@ -35,6 +35,7 @@ sudo apt install -y diceware
 sudo apt install -y ecryptfs-utils
 sudo apt install -y flac
 sudo apt install -y fonts-inconsolata
+sudo apt install -y fuse
 sudo apt install -y gddrescue
 sudo apt install -y geany
 sudo apt install -y geany-plugin-lipsum
@@ -118,10 +119,10 @@ sudo apt install -y wifi-radar
 sudo apt install -y wine64
 sudo apt install -y xclip
 
-sudo snap install bitwarden
-sudo snap install spotify
+#sudo snap install bitwarden
+#sudo snap install spotify
 #sudo snap install vidcutter
-sudo snap install youtube-dl-snap
+#sudo snap install youtube-dl-snap
 
 
 # create git repo
@@ -182,12 +183,12 @@ mkdir $HOME/.st-pub
 mkdir $HOME/.st-vid
 echo "Directories created"
 
-ln -sb $HOME/sync/.st-bin $HOME/bin
-ln -sb $HOME/sync/.st-doc $HOME/Documents
-ln -sb $HOME/sync/.st-mus $HOME/Music
-ln -sb $HOME/sync/.st-pic $HOME/Pictures
-ln -sb $HOME/sync/.st-pub $HOME/Public
-ln -sb $HOME/sync/.st-vid $HOME/Videos
+ln -sb $HOME/syncthing/.st-bin $HOME/bin
+ln -sb $HOME/syncthing/.st-doc $HOME/Documents
+ln -sb $HOME/syncthing/.st-mus $HOME/Music
+ln -sb $HOME/syncthing/.st-pic $HOME/Pictures
+ln -sb $HOME/syncthing/.st-pub $HOME/Public
+ln -sb $HOME/syncthing/.st-vid $HOME/Videos
 echo "links created"
 
 rm $HOME/installdesktop.sh
