@@ -123,6 +123,8 @@ sudo apt install -y xclip
 #sudo snap install spotify
 #sudo snap install vidcutter
 #sudo snap install youtube-dl-snap
+sudo snap remove firefox
+#to do: add firefox from mozilla.org
 
 
 # create git repo
