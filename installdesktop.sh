@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # This shell script sets up Eduardo's working environment on a new
-# Ubuntu machine.
+# **Ubuntu** computer.
 #
 # run this by typing:
 #  wget https://raw.githubusercontent.com/ersanchez/bin/master/installdesktop.sh
@@ -19,6 +19,7 @@ sudo apt install -y abcde
 sudo apt install -y anki
 sudo apt install -y audacity
 sudo apt install -y autokey-gtk
+# install bitwarden
 sudo apt install -y bleachbit
 sudo apt install -y brasero
 sudo apt install -y byzanz
@@ -33,6 +34,7 @@ sudo apt install -y dateutils
 sudo apt install -y dia
 sudo apt install -y diceware
 sudo apt install -y ecryptfs-utils
+# install firefox from mozilla.org
 sudo apt install -y flac
 sudo apt install -y fonts-inconsolata
 sudo apt install -y fuse
@@ -58,6 +60,7 @@ sudo apt install -y kazam
 sudo apt install -y kdenlive
 sudo apt install -y keepassxc
 sudo apt install -y libreoffice
+# install logseq
 sudo apt install -y lynx
 sudo apt install -y lyx
 sudo apt install -y makemkv-oss
@@ -73,7 +76,6 @@ sudo apt install -y newsboat
 sudo apt install -y nfs-common
 sudo apt install -y nmap
 sudo apt install -y okular
-
 sudo apt install -y openvpn
 sudo apt install -y pandoc
 sudo apt install -y par2
@@ -83,11 +85,10 @@ sudo apt install -y picard
 sudo apt install -y powerline
 sudo apt install -y psensor
 sudo apt install -y pv
-sudo apt install -y python
 sudo apt install -y python3
 sudo apt install -y remmina
 sudo apt install -y retext
-sudo apt install -y ring
+sudo apt install -y ring # now Jami?
 sudo apt install -y rsync
 sudo apt install -y sabnzbdplus
 sudo apt install -y scribus
@@ -109,6 +110,7 @@ sudo apt install -y ubuntu-mate-welcome
 sudo apt install -y ufw
 sudo apt install -y uptimed
 sudo apt install -y unrar
+# install vidcutter
 sudo apt install -y vim
 sudo apt install -y virtualbox
 sudo apt install -y virt-manager
@@ -118,14 +120,9 @@ sudo apt install -y whois
 sudo apt install -y wifi-radar
 sudo apt install -y wine64
 sudo apt install -y xclip
+# install yt-dlp
 
-#sudo snap install bitwarden
-#sudo snap install spotify
-#sudo snap install vidcutter
-#sudo snap install youtube-dl-snap
-sudo snap remove firefox
-#to do: add firefox from mozilla.org
-
+sudo snap remove firefox # removes the Firefox snap installed automatically by Ubuntu
 
 # create git repo
 mkdir -p $HOME/git-files/
