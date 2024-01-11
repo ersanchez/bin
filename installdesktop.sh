@@ -18,7 +18,7 @@ sudo apt install -y git
 sudo apt install -y abcde
 sudo apt install -y anki
 sudo apt install -y audacity
-sudo apt install -y autokey-gtk
+# sudo apt install -y autokey-gtk
 # install bitwarden
 sudo apt install -y bleachbit
 sudo apt install -y brasero
@@ -29,18 +29,20 @@ sudo apt install -y chirp
 sudo apt install -y chromium-browser
 sudo apt install -y clementine
 sudo apt install -y cmake
+sudo apt install -y cockpit
 sudo apt install -y curl
 sudo apt install -y dateutils
 sudo apt install -y dia
 sudo apt install -y diceware
 sudo apt install -y ecryptfs-utils
 # install firefox from mozilla.org
+# sudo apt install espanso
 sudo apt install -y flac
 sudo apt install -y fonts-inconsolata
 sudo apt install -y fuse
 sudo apt install -y gddrescue
-sudo apt install -y geany
-sudo apt install -y geany-plugin-lipsum
+# sudo apt install -y geany
+# sudo apt install -y geany-plugin-lipsum
 sudo apt install -y gimp
 sudo apt install -y gnome-clocks
 sudo apt install -y gnome-disk-utility
@@ -59,7 +61,7 @@ sudo apt install -y inkscape
 sudo apt install -y kazam
 sudo apt install -y kdenlive
 sudo apt install -y keepassxc
-sudo apt install -y libreoffice
+# sudo apt install -y libreoffice
 # install logseq
 sudo apt install -y lynx
 sudo apt install -y lyx
@@ -93,7 +95,7 @@ sudo apt install -y rsync
 sudo apt install -y sabnzbdplus
 sudo apt install -y scribus
 sudo apt install -y shutter
-sudo apt install -y signal-desktop
+# sudo apt install -y signal-desktop
 sudo apt install -y simplescreenrecorder
 sudo apt install -y snapd
 sudo apt install -y synapse
@@ -112,7 +114,7 @@ sudo apt install -y uptimed
 sudo apt install -y unrar
 # install vidcutter
 sudo apt install -y vim
-sudo apt install -y virtualbox
+#sudo apt install -y virtualbox
 sudo apt install -y virt-manager
 sudo apt install -y vlc
 sudo apt install -y vokoscreen
