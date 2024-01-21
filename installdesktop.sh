@@ -14,8 +14,12 @@
 
 sudo apt update
 
+# need git first because this script will install dependencies for some later installs
 sudo apt install -y git
-sudo apt install -y abcde
+
+# applications that do *not* require a special configuration
+
+sudo apt install -y abcde # installs postfix?!?!?
 sudo apt install -y anki
 sudo apt install -y audacity
 # sudo apt install -y autokey-gtk
@@ -32,7 +36,7 @@ sudo apt install -y cmake
 sudo apt install -y cockpit
 sudo apt install -y curl
 sudo apt install -y dateutils
-sudo apt install -y dia
+# sudo apt install -y dia
 sudo apt install -y diceware
 sudo apt install -y ecryptfs-utils
 # install firefox from mozilla.org
@@ -63,13 +67,13 @@ sudo apt install -y kdenlive
 sudo apt install -y keepassxc
 # sudo apt install -y libreoffice
 # install logseq
-sudo apt install -y lynx
-sudo apt install -y lyx
-sudo apt install -y makemkv-oss
+# sudo apt install -y lynx
+# sudo apt install -y lyx
+# sudo apt install -y makemkv-oss
 sudo apt install -y markdown
 sudo apt install -y mate-desktop-environment
 sudo apt install -y md5deep
-sudo apt install -y meld
+# sudo apt install -y meld
 sudo apt install -y mono-complete
 sudo apt install -y mplayer
 sudo apt install -y mpv
@@ -84,7 +88,7 @@ sudo apt install -y par2
 sudo apt install -y pdfarranger
 sudo apt install -y peek
 sudo apt install -y picard
-sudo apt install -y powerline
+# sudo apt install -y powerline
 sudo apt install -y psensor
 sudo apt install -y pv
 sudo apt install -y python3
@@ -108,7 +112,7 @@ sudo apt install -y torsocks
 sudo apt install -y traceroute
 sudo apt install -y transmission
 sudo apt install -y tree
-sudo apt install -y ubuntu-mate-welcome
+# sudo apt install -y ubuntu-mate-welcome
 sudo apt install -y ufw
 sudo apt install -y uptimed
 sudo apt install -y unrar
@@ -120,11 +124,19 @@ sudo apt install -y vlc
 sudo apt install -y vokoscreen
 sudo apt install -y whois
 sudo apt install -y wifi-radar
-sudo apt install -y wine64
+# sudo apt install -y wine64
 sudo apt install -y xclip
 # install yt-dlp
 
+# Applications that require some kind of custom configuration
+
 sudo snap remove firefox # removes the Firefox snap installed automatically by Ubuntu
+
+# future apps
+
+# draw.io
+
+# Set up dotfiles
 
 # create git repo
 mkdir -p $HOME/git-files/
