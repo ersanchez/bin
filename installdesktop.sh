@@ -22,6 +22,7 @@ sudo apt install -y git
 sudo apt install -y abcde # installs postfix?!?!?
 sudo apt install -y anki
 sudo apt install -y audacity
+sudo apt install -y autofs
 # sudo apt install -y autokey-gtk
 # install bitwarden
 sudo apt install -y bleachbit
