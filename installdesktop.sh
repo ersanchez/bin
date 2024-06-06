@@ -43,6 +43,7 @@ sudo apt install -y ecryptfs-utils
 # install firefox from mozilla.org
 # sudo apt install espanso
 sudo apt install -y flac
+sudo apt install -y flatpak
 sudo apt install -y fonts-inconsolata
 sudo apt install -y fuse
 sudo apt install -y gddrescue
@@ -134,7 +135,11 @@ sudo apt install -y xclip
 
 # Remove the snap installed by Ubuntu
 # Why? Because it updates and forces a browser restart - **NOT** good for production
-# sudo snap remove firefox # removes the Firefox snap installed automatically by Ubuntu
+sudo snap remove firefox # removes the Firefox snap installed automatically by Ubuntu
+
+# To do: add script to install Firefox from Mozilla
+# Temporary fix: install Gnome browser as a bridge
+flatpak install flathub org.gnome.Epiphany
 
 # future apps
 
