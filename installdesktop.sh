@@ -190,12 +190,13 @@ if [ -d $HOME/Videos ]; then
     mv $HOME/Videos $HOME/videos-old
     fi
 
-mkdir $HOME/.st-bin 
-mkdir $HOME/.st-doc
-mkdir $HOME/.st-mus 
-mkdir $HOME/.st-pic 
-mkdir $HOME/.st-pub 
-mkdir $HOME/.st-vid
+mkdir $HOME/syncthing
+mkdir $HOME/syncthing/.st-bin 
+mkdir $HOME/syncthing/.st-doc
+mkdir $HOME/syncthing/.st-mus 
+mkdir $HOME/syncthing/.st-pic 
+mkdir $HOME/syncthing/.st-pub 
+mkdir $HOME/syncthing/.st-vid
 echo "Directories created"
 
 ln -sb $HOME/syncthing/.st-bin $HOME/bin
