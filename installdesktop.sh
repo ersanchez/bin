@@ -19,8 +19,9 @@ sudo apt install -y git
 
 # applications that do *not* require a special configuration
 
-sudo apt install -y abcde # installs postfix?!?!?
+#sudo apt install -y abcde # installs postfix?!?!?
 sudo apt install -y anki
+sudo apt install -y appimagelauncher
 sudo apt install -y audacity
 sudo apt install -y autofs
 # sudo apt install -y autokey-gtk
