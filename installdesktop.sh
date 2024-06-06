@@ -132,7 +132,9 @@ sudo apt install -y xclip
 
 # Applications that require some kind of custom configuration
 
-sudo snap remove firefox # removes the Firefox snap installed automatically by Ubuntu
+# Remove the snap installed by Ubuntu
+# Why? Because it updates and forces a browser restart - **NOT** good for production
+# sudo snap remove firefox # removes the Firefox snap installed automatically by Ubuntu
 
 # future apps
 
