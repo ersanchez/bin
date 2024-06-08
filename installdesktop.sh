@@ -21,18 +21,18 @@ sudo apt install -y git
 
 #sudo apt install -y abcde # installs postfix?!?!?
 sudo apt install -y anki
-sudo apt install -y appimagelauncher
+#sudo apt install -y appimagelauncher
 sudo apt install -y audacity
 sudo apt install -y autofs
 # sudo apt install -y autokey-gtk
 # install bitwarden
 sudo apt install -y bleachbit
-sudo apt install -y brasero
-sudo apt install -y byzanz
+#sudo apt install -y brasero
+#sudo apt install -y byzanz
 sudo apt install -y calibre
 sudo apt install -y cdparanoia
 sudo apt install -y chirp
-sudo apt install -y chromium-browser
+#sudo apt install -y chromium-browser
 sudo apt install -y clementine
 sudo apt install -y cmake
 sudo apt install -y cockpit
@@ -42,7 +42,7 @@ sudo apt install -y dateutils
 sudo apt install -y diceware
 sudo apt install -y ecryptfs-utils
 # install firefox from mozilla.org
-# sudo apt install espanso
+#sudo apt install espanso
 sudo apt install -y flac
 sudo apt install -y flatpak
 sudo apt install -y fonts-inconsolata
@@ -65,8 +65,9 @@ sudo apt install -y gufw
 sudo apt install -y handbrake
 sudo apt install -y htop
 sudo apt install -y inkscape
+sudo apt install -y jami
 sudo apt install -y kazam
-sudo apt install -y kdenlive
+#sudo apt install -y kdenlive
 sudo apt install -y keepassxc
 # sudo apt install -y libreoffice
 # install logseq
@@ -74,7 +75,7 @@ sudo apt install -y keepassxc
 # sudo apt install -y lyx
 # sudo apt install -y makemkv-oss
 sudo apt install -y markdown
-sudo apt install -y mate-desktop-environment
+#sudo apt install -y mate-desktop-environment
 sudo apt install -y md5deep
 # sudo apt install -y meld
 sudo apt install -y mono-complete
@@ -98,16 +99,15 @@ sudo apt install -y pv
 sudo apt install -y python3
 sudo apt install -y remmina
 sudo apt install -y retext
-sudo apt install -y ring # now Jami?
 sudo apt install -y rsync
-sudo apt install -y sabnzbdplus
-sudo apt install -y scribus
+#sudo apt install -y sabnzbdplus
+#sudo apt install -y scribus
 sudo apt install -y shutter
 # sudo apt install -y signal-desktop
 sudo apt install -y simplescreenrecorder
 sudo apt install -y snapd
 sudo apt install -y synapse
-sudo apt install -y synaptic
+#sudo apt install -y synaptic
 sudo apt install -y syncthing
 sudo apt install -y taskwarrior
 sudo apt install -y tlp
@@ -136,7 +136,7 @@ sudo apt install -y xclip
 
 # Remove the snap installed by Ubuntu
 # Why? Because it updates and forces a browser restart - **NOT** good for production
-sudo snap remove firefox # removes the Firefox snap installed automatically by Ubuntu
+#sudo snap remove firefox # removes the Firefox snap installed automatically by Ubuntu
 
 # To do: add script to install Firefox from Mozilla
 # Temporary fix: install Gnome browser as a bridge
@@ -177,7 +177,7 @@ ln -sb $HOME/git-files/dotfiles/.vimrc $HOME/
 # Not included
 # http://kryogenix.org/code/pick/
 # http://www.omgubuntu.co.uk/2016/08/peek-desktop-gif-screen-recorder-linux
-# app images: openshot, standard notes, etc
+# app images: openshot, standardnotes, bitwarden, etc
 
 if [ -d $HOME/bin ]; then
     mv $HOME/bin $HOME/bin-old
