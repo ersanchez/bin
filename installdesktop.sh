@@ -126,6 +126,7 @@ sudo apt install -y vim
 sudo apt install -y virt-manager
 sudo apt install -y vlc
 sudo apt install -y vokoscreen
+sudo apt install -y xournalpp
 sudo apt install -y whois
 sudo apt install -y wifi-radar
 # sudo apt install -y wine64
