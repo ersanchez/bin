@@ -81,6 +81,7 @@ sudo apt install -y md5deep
 sudo apt install -y mono-complete
 sudo apt install -y mplayer
 sudo apt install -y mpv
+sudo apt install -y ncal
 sudo apt install -y nemo
 sudo apt install -y nemo-python
 sudo apt install -y newsboat
