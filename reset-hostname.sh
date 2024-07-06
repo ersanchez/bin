@@ -9,20 +9,20 @@ update_etc_hosts() {
     local old_hostname=$(hostname)
 
     # update /etc/hosts with the new hostname
-    sudo sed -i "s/$old_hostname/$new_hostname/g" /etc/hosts
+    sed -i "s/$old_hostname/$new_hostname/g" /etc/hosts
 }
 
 # Prompt the user for the new hostname
 read -p "Enter the new hostname: " new_hostname
 
 # Setup the new hostname using systemd
-sudo hostnamectl set-hostname "$new_hostname"
+hostnamectl set-hostname "$new_hostname"
 
 # Update the /etc/hosts file using the function at the top
 update_etc_hosts "$new_hostname"
 
 # Restart systemd-hostnamed service
-sudo systemctl restart systemd-hostnamed
+systemctl restart systemd-hostnamed
 
 # Echo the new hostname
 echo "The hostname has been updated to: " $(hostname)
