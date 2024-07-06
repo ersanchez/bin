@@ -9,7 +9,7 @@ update_etc_hosts() {
     local old_hostname=$(hostname)
 
     # update /etc/hosts with the new hostname
-    sed -i "s/$old_hostname/$new_hostname/g" /etc/hosts
+    sudo sed -i "s/$old_hostname/$new_hostname/g" /etc/hosts
 }
 
 # Prompt the user for the new hostname
