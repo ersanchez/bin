@@ -19,7 +19,7 @@ read -p "Enter the new hostname: " new_hostname
 sudo hostnamectl set-hostname "$new_hostname"
 
 # Update the /etc/hosts file using the function at the top
-sudo update_etc_hosts "$new_hostname"
+update_etc_hosts "$new_hostname"
 
 # Restart systemd-hostnamed service
 sudo systemctl restart systemd-hostnamed
